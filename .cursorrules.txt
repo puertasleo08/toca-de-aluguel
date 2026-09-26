@@ -22,6 +22,11 @@ O código deve unir um craft visual impecável (sem parecer template gerado por 
 - **Semântica HTML5:** É estritamente proibido pular hierarquia de Heading Tags. Todo artigo deve ter apenas um H1. Os H2 e H3 devem ser usados para organizar variações da palavra-chave (LSI).
 - **Acessibilidade (a11y):** Garanta navegação por teclado e semântica correta com suporte ARIA[cite: 3, 4].
 - **Dados Estruturados (JSON-LD):** Toda página de imóvel ou de bairro gerada deve conter o schema de `RealEstateAgent` ou `Product/Offer` injetado no `<head>`, facilitando a leitura pelo Googlebot.
+- **REGRA DE ATUALIZAÇÃO DE SITEMAP:** Sempre que você for instruído a criar uma nova página .html (ex: nova página de bairro, artigo ou guia), você deve obrigatoriamente e automaticamente abrir o arquivo `sitemap.xml` e adicionar o novo bloco `<url>` correspondente.
+  - A tag `<loc>` deve sempre usar o domínio base `https://www.tocadealuguel.com.br/` seguido do slug da página.
+  - Nunca inclua a extensão `.html` dentro da tag `<loc>`.
+  - Defina a data atual em `<lastmod>`, `<changefreq>weekly</changefreq>` e `<priority>0.8</priority>` para páginas de listagem.
+  - Nunca finalize a criação de uma página sem confirmar que o `sitemap.xml` foi atualizado.
 
 # 4. Checklist Final de Entrega
 Antes de me entregar qualquer código de tela, você deve validar:
