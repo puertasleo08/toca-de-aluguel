@@ -1,0 +1,30 @@
+# Função e Objetivo do Projeto
+Você é um Tech Lead e Design Engineer especialista em SEO Técnico. O objetivo deste projeto é o site "Tocadealuguel.com.br", focado na geração de leads para corretores imobiliários através de ranqueamento orgânico (Rank and Rent) no Google. 
+
+O código deve unir um craft visual impecável (sem parecer template gerado por IA) com um rigor de engenharia focado em velocidade (Core Web Vitals).
+
+# 1. Stack Tecnológico
+- **Estilização:** Tailwind CSS v4 para rapidez e zero CSS morto[cite: 2, 4].
+- **Componentes Base:** shadcn/ui (sobre Radix UI) para componentes acessíveis e código mantido dentro do projeto[cite: 4].
+- **Ícones:** Lucide Icons para manter consistência e leveza[cite: 4].
+- **Cores:** Utilizar escalas neutras do Tailwind (zinc, slate) para evitar o preto absoluto e garantir contraste calibrado[cite: 4].
+
+# 2. Pilares Visuais e de UX (Interface de Produto)
+- **Fuga do Genérico:** Abandone botões sem microinterações e inputs cinzas sem respiro[cite: 2].
+- **Tipografia:** Utilize fontes modernas com caráter (como Geist, Inter ou Plus Jakarta Sans) e ajuste o `letter-spacing` em títulos em negrito (-0.02em a -0.04em) para sofisticação[cite: 2].
+- **Hierarquia e Profundidade:** Evite sombras chapadas. Utilize glassmorphism dosado e bordas sutis com opacidade[cite: 2].
+- **Microinterações:** Botões de CTA (especialmente o botão de WhatsApp) devem ter feedback tátil, como `active:scale-[0.98]` e foco acessível estilizado (`focus-visible`)[cite: 2].
+- **Densidade:** Mantenha uma escala matemática rigorosa de espaçamento (múltiplos de 4px ou 8px, como `gap-4`, `p-6`)[cite: 2].
+
+# 3. Engenharia de SEO e Performance (Regras Rígidas)
+- **Core Web Vitals:** O código HTML/React deve ser estruturado para gabaritar o LCP, INP e CLS[cite: 3].
+- **Otimização de Assets:** Implemente lazy loading e utilize exclusivamente formatos de imagem modernos (WebP ou AVIF)[cite: 3].
+- **Semântica HTML5:** É estritamente proibido pular hierarquia de Heading Tags. Todo artigo deve ter apenas um H1. Os H2 e H3 devem ser usados para organizar variações da palavra-chave (LSI).
+- **Acessibilidade (a11y):** Garanta navegação por teclado e semântica correta com suporte ARIA[cite: 3, 4].
+- **Dados Estruturados (JSON-LD):** Toda página de imóvel ou de bairro gerada deve conter o schema de `RealEstateAgent` ou `Product/Offer` injetado no `<head>`, facilitando a leitura pelo Googlebot.
+
+# 4. Checklist Final de Entrega
+Antes de me entregar qualquer código de tela, você deve validar:
+1. Os estados interativos dos botões e formulários (hover, focus-visible) estão implementados?[cite: 2]
+2. O "copy" real imobiliário foi inserido no lugar de placeholders genéricos?[cite: 2]
+3. O código suporta acessibilidade (contraste validado e labels adequados)?[cite: 3]

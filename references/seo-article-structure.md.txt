@@ -1,0 +1,32 @@
+# Estrutura Obrigatória de SEO para Artigos e Imóveis (Padrão Hypen 90/100)
+
+Este guia define a arquitetura estrutural e de SEO On-Page para todas as páginas de conteúdo, listagens de imóveis e artigos do projeto "Toca de Aluguel". O objetivo é gabaritar a auditoria de SEO, garantindo velocidade, semântica e retenção do usuário.
+
+## 1. Regras de Palavra-Chave (Keyword Placement)
+A palavra-chave foco (e suas variações LSI) deve obrigatoriamente aparecer nos seguintes locais estratégicos:
+- **URL Slug:** A palavra-chave deve estar na URL amigável[cite: 22].
+- **Title Tag:** Deve conter a keyword e ter no máximo 60 caracteres[cite: 22].
+- **Meta Description:** Deve conter a keyword e ter até 173 caracteres[cite: 22].
+- **H1:** A página deve ter exatamente UM H1, e ele deve conter a palavra-chave principal[cite: 22].
+- **Início do Texto:** A keyword deve aparecer logo no primeiro ou segundo parágrafo[cite: 22].
+- **Subtítulos (H2):** A keyword ou suas variações diretas devem aparecer em pelo menos um H2[cite: 22].
+
+## 2. Arquitetura de Conversão e UX (Baseada no Modelo Hypen)
+Para garantir alto "Dwell Time" (tempo de tela) e capturar Featured Snippets do Google, a página deve conter:
+- **Resumo Rápido (TL;DR):** Um bloco com 3 a 5 bullet points logo após a introdução, entregando a resposta direta do artigo[cite: 22].
+- **Tabela de Especificações:** Utilizar uma tabela limpa HTML (`<table>`, `<th>`, `<td>`) para listar as características principais do imóvel (quartos, vagas, área, valor, condomínio)[cite: 21, 22].
+- **Escaneabilidade Visual:** Blocos de "Fatos" rápidos com ícones Lucide (ex: tipo, quartos, banheiros, vagas, metragem)[cite: 21].
+- **CTA Flutuante (Card Reserva):** Em desktop, utilizar uma tag `<aside class="lateral">` com position `sticky` contendo um card de reserva e botão direto para o WhatsApp[cite: 21]. Em mobile, incluir um botão fixo na parte inferior da tela[cite: 21].
+- **Fechamento Estratégico:** O artigo nunca deve terminar "solto". A última seção deve ser uma "Conclusão com chamada à ação", direcionando o leitor a agendar uma visita ou falar com o corretor[cite: 22].
+
+## 3. SEO Técnico e Performance (Core Web Vitals)
+- **Hierarquia de Headings:** Não pular níveis de headings (ex: nunca ir de H2 direto para H4)[cite: 22]. Utilizar H3 para agrupar subtópicos dentro dos H2[cite: 22].
+- **Imagens Anti-CLS:** Todas as tags `<img>` devem obrigatoriamente possuir os atributos `width` e `height` definidos[cite: 22].
+- **Alt Text e Lazy Loading:** Todas as imagens devem ter o atributo `alt` preenchido. Imagens abaixo da dobra devem ter `loading="lazy"`[cite: 22].
+- **Scripts Bloqueadores:** Qualquer script externo deve ser carregado com `defer` ou `async`[cite: 22].
+
+## 4. Estruturação de Dados (Schema JSON-LD)
+Toda página deve conter um bloco `<script type="application/ld+json">` no `<head>`[cite: 21, 22]. Dependendo do tipo da página, injetar:
+- **Listagem de Imóvel:** `RealEstateListing`, `Offer`, `PostalAddress` e `RealEstateAgent`[cite: 21].
+- **Artigo Informativo/Guia:** `Article` e `BreadcrumbList`[cite: 21, 22].
+- **Seção de FAQ:** Se a página tiver um H2 focado em "Perguntas Frequentes"[cite: 22], injetar o Schema `FAQPage` com os `Question` e `Answer` correspondentes[cite: 22]. O HTML visual das FAQs deve utilizar `<details>` e `<summary>`[cite: 21].
