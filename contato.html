@@ -59,67 +59,223 @@
           aria-label="Toca de Aluguel — página inicial"
         >
           <img
-            src="./assets/logo.png"
-            alt="Toca de Aluguel — aluguel de imóveis e casas para alugar"
-            width="280"
-            height="112"
-            class="h-20 w-auto scale-110 object-contain sm:h-24"
-            decoding="async"
-            fetchpriority="high"
+          src="./assets/logo.png"
+          alt="Toca de Aluguel — aluguel de imóveis e casas para alugar"
+          width="280"
+          height="112"
+          class="h-20 w-auto scale-110 object-contain sm:h-24"
+          decoding="async"
+          fetchpriority="high"
           />
         </a>
 
-        <ul class="hidden items-center gap-8 md:flex" role="list">
-          <li>
-            <a
-              href="/#apartamentos"
-              class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
+        <div class="relative hidden min-w-0 max-w-md flex-1 lg:block" data-search>
+          <form
+            role="search"
+            action="/"
+            class="flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/85 p-1.5 pl-4 shadow-[0_10px_30px_-18px_rgba(11,31,58,0.45)] transition-all focus-within:border-brand-orange/60 focus-within:ring-4 focus-within:ring-brand-orange/15"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400" aria-hidden="true"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+            <label for="busca-desktop" class="sr-only">Buscar imóveis por cidade ou tipo</label>
+            <input
+              id="busca-desktop"
+              type="search"
+              name="q"
+              autocomplete="off"
+              placeholder="Busque por cidade ou tipo de imóvel"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="busca-desktop-lista"
+              class="min-w-0 flex-1 bg-transparent py-1.5 text-sm text-blue-950 placeholder:text-slate-400 focus:outline-none [&::-webkit-search-cancel-button]:hidden"
+              data-search-input
+            />
+            <button
+              type="submit"
+              class="shrink-0 rounded-full bg-brand-orange px-5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-10px_rgba(249,115,22,0.8)] transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+            >
+              Buscar
+            </button>
+          </form>
+          <ul
+            id="busca-desktop-lista"
+            role="listbox"
+            aria-label="Páginas encontradas"
+            class="absolute inset-x-0 top-full z-50 mt-2 max-h-80 space-y-1 overflow-auto rounded-2xl border border-white/60 bg-white/75 p-2 shadow-[0_24px_48px_-20px_rgba(11,31,58,0.45)] backdrop-blur-xl"
+            hidden
+            data-search-list
+          ></ul>
+        </div>
+
+        <ul class="hidden shrink-0 items-center gap-6 lg:flex" role="list">
+          <li class="group relative" data-menu>
+            <button
+              type="button"
+              class="inline-flex items-center gap-1.5 rounded-lg py-2 text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
+              aria-expanded="false"
+              aria-controls="menu-alugar"
+              data-menu-button
             >
               Alugar
-            </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200 group-hover:rotate-180 group-data-[open]:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <div
+              id="menu-alugar"
+              class="invisible absolute left-1/2 top-full z-50 w-[24rem] -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-data-[open]:visible group-data-[open]:translate-y-0 group-data-[open]:opacity-100"
+            >
+              <div class="grid grid-cols-2 gap-6 rounded-2xl border border-white/60 bg-white/90 p-4 shadow-lg backdrop-blur-xl">
+                <div>
+                  <p class="px-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">Cidade</p>
+                  <ul class="mt-2 space-y-0.5" role="list">
+                    <li>
+                      <a href="/apartamentos-porto-alegre" class="block rounded-lg px-2 py-1.5 text-sm text-slate-700 transition-colors hover:bg-brand-sand hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Porto Alegre</a>
+                    </li>
+                    <li>
+                      <a href="/apartamentos-curitiba" class="block rounded-lg px-2 py-1.5 text-sm text-slate-700 transition-colors hover:bg-brand-sand hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Curitiba</a>
+                    </li>
+                    <li>
+                      <a href="/casas-ubatuba" class="block rounded-lg px-2 py-1.5 text-sm text-slate-700 transition-colors hover:bg-brand-sand hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Ubatuba</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="px-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">Tipo de imóvel</p>
+                  <ul class="mt-2 space-y-0.5" role="list">
+                    <li>
+                      <a href="/#apartamentos" class="block rounded-lg px-2 py-1.5 text-sm text-slate-700 transition-colors hover:bg-brand-sand hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Apartamentos para alugar</a>
+                    </li>
+                    <li>
+                      <a href="/#casas-para-alugar" class="block rounded-lg px-2 py-1.5 text-sm text-slate-700 transition-colors hover:bg-brand-sand hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Casas para alugar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
           <li>
-            <a
-              href="/#casas-para-alugar"
-              class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
-            >
-              Comprar
-            </a>
+            <a href="/#casas-para-alugar" class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Comprar</a>
           </li>
           <li>
-            <a
-              href="/#anunciar"
-              class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
-            >
-              Anunciar
-            </a>
+            <a href="/anunciar" class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Anunciar</a>
           </li>
         </ul>
 
-        <a
-          href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Vim%20pelo%20site%20Toca%20de%20Aluguel%20e%20quero%20falar%20sobre%20im%C3%B3veis"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_-8px_rgba(37,211,102,0.55)] transition-all duration-200 hover:bg-[#128C7E] hover:shadow-[0_12px_28px_-8px_rgba(18,140,126,0.65)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-95 sm:px-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
+        <div class="flex shrink-0 items-center gap-2">
+          <button
+            type="button"
+            class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200/80 bg-white/80 text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange active:scale-95 lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            data-mobile-toggle
           >
-            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-          </svg>
-          <span class="hidden sm:inline">Fale no WhatsApp</span>
-          <span class="sm:hidden">WhatsApp</span>
-        </a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+          </button>
+          <a
+            href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Vim%20pelo%20site%20Toca%20de%20Aluguel%20e%20quero%20falar%20sobre%20im%C3%B3veis"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fale no WhatsApp"
+            class="inline-flex h-11 items-center gap-2 rounded-xl bg-[#25D366] px-3 text-sm font-semibold text-white shadow-[0_8px_24px_-8px_rgba(37,211,102,0.55)] transition-all duration-200 hover:bg-[#128C7E] hover:shadow-[0_12px_28px_-8px_rgba(18,140,126,0.65)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-95 sm:px-4"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
+            <span class="hidden sm:inline">Fale no WhatsApp</span>
+          </a>
+        </div>
       </nav>
+
+      <div
+        id="menu-mobile"
+        class="absolute inset-x-0 top-full max-h-[calc(100dvh-6rem)] overflow-y-auto border-b border-white/40 bg-white/95 px-4 pb-6 pt-4 shadow-lg backdrop-blur-xl sm:px-6 lg:hidden"
+        hidden
+      >
+        <div class="mx-auto max-w-xl space-y-6">
+          <div class="relative" data-search>
+          <form
+            role="search"
+            action="/"
+            class="flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/85 p-1.5 pl-4 shadow-[0_10px_30px_-18px_rgba(11,31,58,0.45)] transition-all focus-within:border-brand-orange/60 focus-within:ring-4 focus-within:ring-brand-orange/15"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-slate-400" aria-hidden="true"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
+            <label for="busca-mobile" class="sr-only">Buscar imóveis por cidade ou tipo</label>
+            <input
+              id="busca-mobile"
+              type="search"
+              name="q"
+              autocomplete="off"
+              placeholder="Busque por cidade ou tipo de imóvel"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              aria-controls="busca-mobile-lista"
+              class="min-w-0 flex-1 bg-transparent py-1.5 text-sm text-blue-950 placeholder:text-slate-400 focus:outline-none [&::-webkit-search-cancel-button]:hidden"
+              data-search-input
+            />
+            <button
+              type="submit"
+              class="shrink-0 rounded-full bg-brand-orange px-5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-10px_rgba(249,115,22,0.8)] transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+            >
+              Buscar
+            </button>
+          </form>
+          <ul
+            id="busca-mobile-lista"
+            role="listbox"
+            aria-label="Páginas encontradas"
+            class="absolute inset-x-0 top-full z-50 mt-2 max-h-80 space-y-1 overflow-auto rounded-2xl border border-white/60 bg-white/75 p-2 shadow-[0_24px_48px_-20px_rgba(11,31,58,0.45)] backdrop-blur-xl"
+            hidden
+            data-search-list
+          ></ul>
+        </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">Alugar por cidade</p>
+            <ul class="mt-3 grid gap-2 sm:grid-cols-3" role="list">
+              <li>
+                <a href="/apartamentos-porto-alegre" class="flex items-center justify-between gap-3 rounded-xl border border-slate-200/70 bg-white px-4 py-3.5 transition-all active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">
+                  <span>
+                    <span class="block text-base font-semibold text-blue-950">Porto Alegre</span>
+                    <span class="block text-xs text-slate-500">Apartamentos · RS</span>
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-brand-orange" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </a>
+              </li>
+              <li>
+                <a href="/apartamentos-curitiba" class="flex items-center justify-between gap-3 rounded-xl border border-slate-200/70 bg-white px-4 py-3.5 transition-all active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">
+                  <span>
+                    <span class="block text-base font-semibold text-blue-950">Curitiba</span>
+                    <span class="block text-xs text-slate-500">Apartamentos · PR</span>
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-brand-orange" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </a>
+              </li>
+              <li>
+                <a href="/casas-ubatuba" class="flex items-center justify-between gap-3 rounded-xl border border-slate-200/70 bg-white px-4 py-3.5 transition-all active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">
+                  <span>
+                    <span class="block text-base font-semibold text-blue-950">Ubatuba</span>
+                    <span class="block text-xs text-slate-500">Casas de temporada · SP</span>
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-brand-orange" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">Tipo de imóvel</p>
+            <ul class="mt-3 grid grid-cols-2 gap-2" role="list">
+              <li>
+                <a href="/#apartamentos" class="flex h-full items-center rounded-xl border border-slate-200/70 bg-white px-3.5 py-3 text-sm font-semibold text-blue-950 transition-all active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Apartamentos para alugar</a>
+              </li>
+              <li>
+                <a href="/#casas-para-alugar" class="flex h-full items-center rounded-xl border border-slate-200/70 bg-white px-3.5 py-3 text-sm font-semibold text-blue-950 transition-all active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Casas para alugar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-6 border-t border-slate-200/70 pt-4">
+            <a href="/#casas-para-alugar" class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Comprar</a>
+            <a href="/anunciar" class="text-sm font-semibold tracking-tight text-blue-950 transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Anunciar</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main id="conteudo" class="relative">
@@ -278,7 +434,7 @@
             </li>
             <li>
               <a
-                href="/#anunciar"
+                href="/anunciar"
                 class="transition-colors hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange"
                 >Anunciar</a
               >
@@ -376,5 +532,7 @@
         new Date().getFullYear()
       );
     </script>
+    <script src="./assets/menu.js" defer></script>
+    <script src="./assets/search.js" defer></script>
   </body>
 </html>

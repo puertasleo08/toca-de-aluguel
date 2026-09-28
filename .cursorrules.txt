@@ -27,6 +27,9 @@ O código deve unir um craft visual impecável (sem parecer template gerado por 
   - Nunca inclua a extensão `.html` dentro da tag `<loc>`.
   - Defina a data atual em `<lastmod>`, `<changefreq>weekly</changefreq>` e `<priority>0.8</priority>` para páginas de listagem.
   - Nunca finalize a criação de uma página sem confirmar que o `sitemap.xml` foi atualizado.
+- **REGRA DO MENU "ALUGAR" E DA BUSCA:** Sempre que uma nova página de localidade for criada, você deve obrigatoriamente realizar duas ações:
+  1. Adicionar o link dessa nova cidade na Coluna "Cidade" do Dropdown "Alugar" no cabeçalho de TODOS os arquivos .html do projeto (dropdown de desktop `#menu-alugar` e painel mobile `#menu-mobile`), usando a URL limpa, sem `.html`.
+  2. Atualizar o array do script de pesquisa no final dos arquivos (array `ROTAS` em `assets/search.js`, carregado no fim de cada página) para que a nova página seja encontrada pela barra de busca.
 
 # 4. Checklist Final de Entrega
 Antes de me entregar qualquer código de tela, você deve validar:
