@@ -23,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
+      content="https://www.tocadealuguel.com.br/assets/review/porto-alegre/imagem1.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <link
@@ -140,7 +140,7 @@
             "@id": "https://www.tocadealuguel.com.br/apartamentos-porto-alegre#article",
             "headline": "Apartamento para alugar em Porto Alegre: preços, bairros e guia do mercado",
             "description": "Guia de mercado com aluguel mediano, bairros com mais oferta e comodidades mais comuns dos apartamentos para alugar em Porto Alegre.",
-            "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+            "image": "https://www.tocadealuguel.com.br/assets/review/porto-alegre/imagem1.jpg",
             "datePublished": "2026-09-26T08:00:00-03:00",
             "dateModified": "2026-09-26T08:00:00-03:00",
             "inLanguage": "pt-BR",
@@ -487,18 +487,78 @@
                 <strong class="font-semibold text-blue-950">R$ 580</strong>.
               </p>
 
-              <figure
-                class="mt-8 overflow-hidden rounded-[1.75rem] border border-white/60 bg-white/40 shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)] backdrop-blur-sm"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
-                  alt="Fachada de prédio residencial com varandas, representando apartamentos para alugar em Porto Alegre"
-                  width="1200"
-                  height="675"
-                  class="aspect-video w-full object-cover"
-                  decoding="async"
-                  fetchpriority="high"
-                />
+              <figure class="mt-8">
+                <div class="group relative">
+                <button
+                  type="button"
+                  class="absolute -left-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center rounded-full bg-white/80 p-2 text-blue-950 shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange sm:flex"
+                  aria-label="Foto anterior"
+                  aria-controls="carrossel-poa"
+                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: -c.clientWidth, behavior: 'smooth' })"
+                >
+                  <i data-lucide="chevron-left" class="h-5 w-5" aria-hidden="true"></i>
+                </button>
+                <button
+                  type="button"
+                  class="absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 items-center justify-center rounded-full bg-white/80 p-2 text-blue-950 shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange sm:flex"
+                  aria-label="Próxima foto"
+                  aria-controls="carrossel-poa"
+                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: c.clientWidth, behavior: 'smooth' })"
+                >
+                  <i data-lucide="chevron-right" class="h-5 w-5" aria-hidden="true"></i>
+                </button>
+                <div
+                  id="carrossel-poa"
+                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
+                  tabindex="0"
+                  role="region"
+                  aria-roledescription="carrossel"
+                  aria-label="Fotos de Porto Alegre, deslize para o lado"
+                >
+                  <img
+                    src="./assets/review/porto-alegre/imagem1.jpg"
+                    alt="Vista do Parque Redenção, região muito buscada para apartamento para alugar em Porto Alegre"
+                    width="1024"
+                    height="764"
+                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
+                  <img
+                    src="./assets/review/porto-alegre/imagem2.jpg"
+                    alt="Orla do Guaíba perto do Centro Histórico, excelente localização de aluguel de apartamento em Porto Alegre"
+                    width="1024"
+                    height="764"
+                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <img
+                    src="./assets/review/porto-alegre/imagem3.jpg"
+                    alt="Parque Moinhos de Vento, área de apartamentos de alto padrão para locação em Porto Alegre"
+                    width="1024"
+                    height="764"
+                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <img
+                    src="./assets/review/porto-alegre/imagem4.jpg"
+                    alt="Mercado Público de Porto Alegre, próximo a diversas opções de imóveis para alugar"
+                    width="1024"
+                    height="764"
+                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                </div>
+                <figcaption
+                  class="mt-2 flex items-center justify-center gap-1.5 text-xs font-medium text-slate-500"
+                >
+                  <i data-lucide="move-horizontal" class="h-3.5 w-3.5" aria-hidden="true"></i>
+                  Deslize para ver 4 fotos de Porto Alegre
+                </figcaption>
               </figure>
             </header>
 
@@ -1043,6 +1103,40 @@
                 meio-termo entre preço e localização.
               </p>
             </section>
+
+            <section aria-labelledby="video-heading" class="space-y-6">
+              <h2
+                id="video-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Conheça Porto Alegre: O Guia Definitivo da Capital Gaúcha
+              </h2>
+              <div
+                class="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-6"
+              >
+                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-blue-950 shadow-lg">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/5n8ZfRBCloI?si=K2EF7k9XB7YFWfqR"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    class="block h-full w-full object-cover"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <p class="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  Antes de escolher o seu apartamento para alugar em Porto Alegre,
+                  dê o play e conheça a infraestrutura da cidade: transporte,
+                  bairros, parques, custo de vida e o clima da capital gaúcha. Em
+                  poucos minutos, você entende qual região combina com a sua
+                  rotina — e chega à visita muito mais seguro da decisão.
+                </p>
+              </div>
+            </section>
+
 
             <section aria-labelledby="comodidades-heading" class="space-y-6">
               <h2
