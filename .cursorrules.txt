@@ -32,7 +32,8 @@ O código deve unir um craft visual impecável (sem parecer template gerado por 
   2. Atualizar o array do script de pesquisa no final dos arquivos (array `ROTAS` em `assets/search.js`, carregado no fim de cada página) para que a nova página seja encontrada pela barra de busca.
 - **REGRA DE MÍDIA LOCAL:** Sempre que criar uma nova página de localidade (ex: cidades, bairros), é OBRIGATÓRIO incluir duas secções visuais:
   1. Um iframe responsivo com um vídeo do YouTube relevante sobre a cidade.
-  2. Uma galeria/carrossel de imagens apontando para `assets/review/[nome-da-cidade]/`, onde todas as imagens DEVEM conter a tag `alt` otimizada com a palavra-chave foco e variações LSI.
+  2. Uma galeria/carrossel de imagens apontando para `assets/REVIEW/[NOME-DA-CIDADE]/` (respeitar exatamente maiúsculas/minúsculas das pastas reais, pois a Vercel diferencia), onde todas as imagens DEVEM conter a tag `alt` otimizada com a palavra-chave foco e variações LSI.
+- **SEO DE IMAGENS (ALT TAGS):** Toda vez que uma tag `<img>` for criada ou modificada, o atributo `alt` DEVE obrigatoriamente ser preenchido. O texto do `alt` deve descrever visualmente o que está na foto E incorporar de forma natural a palavra-chave de foco da página ou suas variações LSI (ex: 'alugar casa em [cidade]', 'apartamento para alugar em [cidade]'). É estritamente proibido fazer 'Keyword Stuffing' (repetir a exata mesma palavra-chave em todas as fotos sem contexto).
 
 # 4. Checklist Final de Entrega
 Antes de me entregar qualquer código de tela, você deve validar:
