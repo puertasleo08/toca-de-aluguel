@@ -19,6 +19,12 @@
       tags: "sp litoral norte praia temporada ferias casa casas",
     },
     {
+      nome: "Coberturas no Rio de Janeiro",
+      url: "/coberturas-rio-de-janeiro",
+      detalhe: "Venda e locação de alto padrão · RJ",
+      tags: "rj carioca cobertura coberturas luxo alto padrao comprar venda leblon ipanema lagoa barra tijuca recreio",
+    },
+    {
       nome: "Anunciar: leads para corretores",
       url: "/anunciar",
       detalhe: "Para corretores e imobiliárias",
