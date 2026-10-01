@@ -25,6 +25,12 @@
       tags: "rj carioca cobertura coberturas luxo alto padrao comprar venda leblon ipanema lagoa barra tijuca recreio",
     },
     {
+      nome: "Casas em Alphaville Fortaleza",
+      url: "/casas-alphaville-fortaleza",
+      detalhe: "Casas de alto padrão · Fortaleza, CE",
+      tags: "fortaleza ceara ce eusebio alphaville alpha casa casas condominio luxo alto padrao comprar venda lote",
+    },
+    {
       nome: "Anunciar: leads para corretores",
       url: "/anunciar",
       detalhe: "Para corretores e imobiliárias",
