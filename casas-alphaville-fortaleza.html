@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alphaville Fortaleza: Casas e Preços | Toca de Aluguel</title>
+    <title>Alphaville Fortaleza e Eusébio: Casas à Venda e Preços</title>
     <meta
       name="description"
-      content="Alphaville Fortaleza: casas à venda de R$ 2,8 milhões a R$ 12 milhões, mediana de R$ 3,95 milhões, clube privado e segurança 24h. Fale com corretores parceiros."
+      content="Alphaville Fortaleza: casas de R$ 2,8 a R$ 12 milhões (mediana de R$ 3,95 milhões), lote a partir de R$ 1,45 milhão, clube e sistema de segurança 24h para a vida em família."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0B1F3A" />
@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Toca de Aluguel" />
     <meta
       property="og:title"
-      content="Alphaville Fortaleza: Casas e Preços | Toca de Aluguel"
+      content="Alphaville Fortaleza e Eusébio: Casas à Venda e Preços"
     />
     <meta
       property="og:description"
@@ -57,6 +57,35 @@
         --color-brand-orange-hot: #ea580c;
         --color-brand-sand: #f4f7fb;
         --color-brand-mist: #e8eef6;
+      }
+
+      @keyframes crescer {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      @keyframes brilho-laranja {
+        0%,
+        100% {
+          box-shadow: 0 0 22px -8px rgba(249, 115, 22, 0.22);
+        }
+        50% {
+          box-shadow: 0 0 30px -4px rgba(249, 115, 22, 0.4);
+        }
+      }
+
+      @keyframes brilho-whatsapp {
+        0%,
+        100% {
+          box-shadow: 0 10px 28px -10px rgba(37, 211, 102, 0.75), 0 0 0 0 rgba(37, 211, 102, 0.45);
+        }
+        50% {
+          box-shadow: 0 12px 34px -8px rgba(37, 211, 102, 0.85), 0 0 0 7px rgba(37, 211, 102, 0);
+        }
       }
 
       details > summary::-webkit-details-marker {
@@ -155,11 +184,11 @@
           {
             "@type": "Article",
             "@id": "https://www.tocadealuguel.com.br/casas-alphaville-fortaleza#article",
-            "headline": "Alphaville Fortaleza: casas de alto padrão, preços e guia do território",
+            "headline": "Alphaville Fortaleza e Eusébio: casas de alto padrão e preços",
             "description": "Guia de território com faixa de preços, metragens, clube privado e segurança das casas à venda em Alphaville Fortaleza, no Ceará.",
             "image": "https://www.tocadealuguel.com.br/assets/REVIEW/ALPHAVILLE-FORTALEZA/fachada-casa-moderna-alphaville-fortaleza.jpg",
             "datePublished": "2026-09-29T08:00:00-03:00",
-            "dateModified": "2026-09-29T08:00:00-03:00",
+            "dateModified": "2026-10-30T19:00:00-03:00",
             "inLanguage": "pt-BR",
             "author": {
               "@id": "https://www.tocadealuguel.com.br/#organization"
@@ -505,8 +534,8 @@
         aria-hidden="true"
       ></div>
 
-      <div class="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <nav aria-label="Trilha de navegação" class="mb-8 text-xs text-slate-500">
+      <div class="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-14 lg:px-8">
+        <nav aria-label="Trilha de navegação" class="mb-5 text-xs text-slate-500 sm:mb-8">
           <ol class="flex flex-wrap items-center gap-2" role="list">
             <li>
               <a
@@ -523,7 +552,7 @@
         </nav>
 
         <div class="grid gap-10 lg:grid-cols-12">
-          <article class="space-y-12 lg:col-span-8">
+          <article class="min-w-0 space-y-12 lg:col-span-8">
             <header>
               <p
                 class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange"
@@ -531,15 +560,15 @@
                 Guia de território · Alphaville Fortaleza, CE
               </p>
               <h1
-                class="text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-blue-950 sm:text-5xl"
+                class="text-[1.6rem] font-extrabold leading-[1.12] tracking-[-0.035em] text-blue-950 sm:text-5xl sm:leading-[1.08]"
               >
-                Alphaville Fortaleza: Casas de Alto Padrão, Preços e Guia do Território
+                Alphaville Fortaleza e Eusébio: Casas de Alto Padrão e Preços
               </h1>
               <div
-                class="mt-4 h-1 w-16 rounded-full bg-brand-orange"
+                class="mt-4 hidden h-1 w-16 rounded-full bg-brand-orange sm:block"
                 aria-hidden="true"
               ></div>
-              <p class="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
+              <p class="mt-5 text-[0.95rem] leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
                 Alphaville Fortaleza é o endereço de quem não abre mão de
                 exclusividade, segurança e clube privado a poucos minutos da
                 capital cearense. Reunimos os números do mercado para você
@@ -551,14 +580,45 @@
                 e unidades de luxo chegando a R$ 12 milhões.
               </p>
 
-              <figure class="mt-8">
+              <dl class="mt-5 grid grid-cols-2 gap-2.5 sm:mt-6 sm:grid-cols-4 sm:gap-3" aria-label="Indicadores das casas à venda em Alphaville Fortaleza">
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Preço mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 3,95 mi<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Entrada</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 2,8 mi<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">m² mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 9,6 mil<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Área mediana</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">435 m²<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+              </dl>
+
+              <nav class="mt-4 sm:mt-5" aria-label="Filtros rápidos de imóveis">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Filtros rápidos</p>
+                <div class="mt-2 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <a href="#destaques" data-atalho="quartos:4" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">4 suítes</a>
+                  <a href="#destaques" data-atalho="quartos:5" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">5 suítes</a>
+                  <a href="#destaques" data-atalho="preco:ate" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 4 mi</a>
+                  <a href="#destaques" data-atalho="extra:piscina" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Com piscina</a>
+                  <a href="#bairros-vizinhos" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Entorno</a>
+                  <a href="#mapa-cidade" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mapa</a>
+                </div>
+              </nav>
+
+              <figure class="mt-6 sm:mt-8">
                 <div class="group relative">
                 <button
                   type="button"
                   class="absolute left-2 sm:-left-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Foto anterior"
                   aria-controls="carrossel-alpha"
-                  onclick="const c = document.getElementById('carrossel-alpha'); c.scrollBy({ left: -c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-alpha'); c.scrollBy({ left: -(c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
                 </button>
@@ -567,13 +627,13 @@
                   class="absolute right-2 sm:-right-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Próxima foto"
                   aria-controls="carrossel-alpha"
-                  onclick="const c = document.getElementById('carrossel-alpha'); c.scrollBy({ left: c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-alpha'); c.scrollBy({ left: (c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
                 </button>
                 <div
                   id="carrossel-alpha"
-                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
+                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
                   tabindex="0"
                   role="region"
                   aria-roledescription="carrossel"
@@ -584,7 +644,7 @@
                     alt="Fachada moderna de uma das casas à venda em Alphaville Fortaleza, com volumes de concreto, painéis de madeira e jardim iluminado ao entardecer"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
                     decoding="async"
                     fetchpriority="high"
                   />
@@ -593,7 +653,7 @@
                     alt="Vista aérea do território de Alphaville em Fortaleza, com residenciais planejados, lagoa, área verde e o mar no horizonte"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -602,7 +662,7 @@
                     alt="Casa de arquitetura neoclássica com arcos, varanda iluminada e espelho d'água, padrão das casas em Alphaville Fortaleza"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -611,7 +671,7 @@
                     alt="Clube com piscinas, hidromassagem e salão envidraçado à beira da lagoa, referência de lazer privativo em condomínio de alto padrão"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -625,6 +685,368 @@
                 </figcaption>
               </figure>
             </header>
+
+            <section id="destaques" aria-labelledby="destaques-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="destaques-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Destaques: casas à venda em Alphaville Fortaleza, de 4 e 5 suítes
+              </h2>
+
+              <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md space-y-3 p-3 sm:p-4" role="group" aria-label="Filtrar imóveis em destaque">
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Suítes</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Todas</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="4" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">4 suítes</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="5" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">5 suítes</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Preço</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Qualquer</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="ate" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 4 mi</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="acima" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Acima de R$ 4 mi</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Extras</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="piscina" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Com piscina</button>
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="gourmet" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Espaço gourmet</button>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between gap-3 border-t border-slate-200/70 pt-3">
+                  <p id="filtro-status" class="text-sm text-slate-500" aria-live="polite">Mostrando 6 de 6 casas</p>
+                  <button type="button" id="filtro-limpar" class="min-h-10 rounded-lg px-2 text-sm font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2" hidden>Limpar filtros</button>
+                </div>
+              </div>
+
+              <div id="lista-apartamentos" class="grid gap-6 sm:grid-cols-2">
+                <article
+                  data-quartos="4"
+                  data-preco="2950000"
+                  data-tags="piscina"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75"
+                      alt="Casa contemporânea de dois pavimentos com fachada em madeira, grandes vãos de vidro e jardim iluminado, exemplo de casa de alto padrão à venda no Alphaville"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Alto padrão</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa 4 Suítes — Alphaville Fortaleza
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      330 m² · Piscina e churrasqueira · 3 vagas
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      4 quartos (4 suítes) · 5 banheiros · 3 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.950.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.400/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%204%20su%C3%ADtes%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="5"
+                  data-preco="2990000"
+                  data-tags=""
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=75"
+                      alt="Casa em condomínio com área verde e gramado, perfil das casas de 5 suítes à venda em Alphaville Fortaleza na faixa de entrada do mercado"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa 5 Suítes — Entrada do Mercado
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      400 m² · 5 suítes pelo preço de 4
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      5 quartos (5 suítes)
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.990.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >Condomínio sob consulta</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%205%20su%C3%ADtes%20na%20faixa%20de%20entrada%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="4"
+                  data-preco="3600000"
+                  data-tags="piscina gourmet"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75"
+                      alt="Área externa com piscina privativa e portas de vidro para a sala, padrão de lazer das casas em condomínio de luxo em Fortaleza"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa 4 Suítes com Piscina — Alphaville Fortaleza
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      420 m² · Varanda gourmet · Lote de 450 m²
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      4 quartos (4 suítes) · 5 banheiros · 4 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 3.600.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.600/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%204%20su%C3%ADtes%20com%20piscina%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="5"
+                  data-preco="5300000"
+                  data-tags="gourmet"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=75"
+                      alt="Casa moderna com volume revestido em madeira, gramado e caminho de pedras, estilo das residências de alto padrão no Alphaville em Fortaleza"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa 5 Suítes — Alphaville Fortaleza
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      500 m² · Espaço gourmet · Escritório
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      5 quartos (5 suítes) · 6 banheiros · 4 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 5.300.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.800/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%205%20su%C3%ADtes%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="5"
+                  data-preco="6200000"
+                  data-tags=""
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75"
+                      alt="Residência de arquitetura contemporânea com fachada de madeira e vidro e acesso amplo para carros, referência de casa de luxo para comprar em Alphaville"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Alto padrão</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa de Luxo 5 Suítes — Alphaville Fortaleza
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      600 m² · Hidromassagem e lareira · 6 vagas
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      5 quartos (5 suítes) · 7 banheiros · 6 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 6.200.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.800/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%20luxo%20de%205%20su%C3%ADtes%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="5"
+                  data-preco="12000000"
+                  data-tags=""
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=75"
+                      alt="Sobrado com varanda ampla, referência das casas de luxo de 600 m² à venda no topo do mercado de Alphaville Fortaleza"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Alto padrão</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Casa 5 Suítes — Topo do Mercado
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      600 m² · A mais cara da amostra
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      5 quartos (5 suítes)
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 12.000.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >Condomínio sob consulta</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%20luxo%20no%20topo%20do%20mercado%20%C3%A0%20venda%20em%20Alphaville%20Fortaleza."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div id="filtro-vazio" class="rounded-2xl border border-dashed border-slate-300 bg-white/60 p-6 text-center" hidden>
+                <p class="text-sm font-semibold text-blue-950">Nenhum destaque com esse perfil agora.</p>
+                <p class="mt-1 text-sm text-slate-600">Os corretores parceiros têm mais opções fora desta vitrine.</p>
+                <a href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20casas%20em%20Alphaville%20Fortaleza%20e%20quero%20op%C3%A7%C3%B5es%20com%20o%20meu%20perfil." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex min-h-10 items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_26px_-10px_rgba(37,211,102,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Pedir opções no WhatsApp</a>
+              </div>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Exemplos com base nas medianas e em anúncios reais da amostra. Disponibilidade, valores e condições de cada casa são confirmados pelo corretor parceiro no atendimento.
+              </p>
+            </section>
 
             <section
               aria-labelledby="resumo-heading"
@@ -686,71 +1108,90 @@
                 passam de R$ 5 milhões.
               </p>
 
-              <ul
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3"
-                role="list"
-                aria-label="Fatos rápidos do mercado de Alphaville Fortaleza"
-              >
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Tipo
+              <div class="grid gap-4 lg:grid-cols-2">
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Distribuição de preços das casas
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Percentual e número de casas por faixa de preço (20 casas à venda)</p>
+                  <ul class="mt-5 space-y-3.5" role="list">
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">Até R$ 3 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">15% · 3</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[43%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 3 a 4 milhões <span class="ml-1 rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand-orange-hot">mais comum</span></span>
+                        <span class="shrink-0 tabular-nums text-slate-500">35% · 7</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-gradient-to-r from-brand-orange to-amber-400"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 4 a 5 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">20% · 4</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[57%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 5 a 6 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">15% · 3</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[43%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 6 milhões ou mais</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">15% · 3</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[43%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Quartos, preço mediano e área das casas
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Proporção da amostra e valores medianos de cada tamanho</p>
+                  <div class="mt-5 flex h-4 gap-0.5 overflow-hidden rounded-full bg-slate-200/70" aria-hidden="true"><div data-barra class="h-full w-[5%] bg-blue-950 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[45%] bg-brand-orange origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[50%] bg-amber-400 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div></div>
+                  <ul class="mt-3 divide-y divide-slate-200/70" role="list">
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-blue-950" aria-hidden="true"></span>3 quartos <span class="font-normal text-slate-500">(5%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 4,95 mi · 290 m² · 1 casa</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-orange" aria-hidden="true"></span>4 quartos <span class="font-normal text-slate-500">(45%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 3,5 mi · 376 m²</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-amber-400" aria-hidden="true"></span>5 quartos <span class="font-normal text-slate-500">(50%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 5,15 mi · 503 m²</span>
+                    </li>
+                  </ul>
+                  <p class="mt-3 text-xs leading-relaxed text-slate-500">
+                    Metade das casas tem 5 quartos. Na mediana, a 5ª suíte acrescenta cerca de R$ 1,65 milhão ao preço e 127 m² de área construída.
                   </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    Casa em condomínio
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2" /><circle cx="12" cy="12" r="2" /><path d="M6 12h.01M18 12h.01" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Preço de entrada
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 2,8 milhões
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /><circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Preço mediano
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 3,95 milhões
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" /><path d="M5 21h14" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Topo do mercado
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 12 milhões
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Área mediana
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    435 m²
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" /><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" /><path d="M12 4v6" /><path d="M2 18h20" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Suítes
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    4 a 5
-                  </p>
-                </li>
-              </ul>
+                </div>
+              </div>
 
               <div
                 class="overflow-x-auto rounded-2xl border border-white/50 bg-white/60 shadow-sm backdrop-blur-md"
               >
-                <table class="w-full text-left text-sm">
+                <table class="w-full min-w-[30rem] text-left text-sm">
                   <caption class="sr-only">
                     Indicadores das casas e lotes à venda em Alphaville Fortaleza
                   </caption>
@@ -806,96 +1247,91 @@
               </p>
             </section>
 
-            <section aria-labelledby="territorio-heading" class="space-y-6">
+            <section id="bairros-vizinhos" aria-labelledby="vizinhos-heading" class="scroll-mt-32 space-y-6">
               <h2
-                id="territorio-heading"
+                id="vizinhos-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Alphaville em Fortaleza: onde fica e por que valoriza
+                Regiões de influência e bairros vizinhos de Alphaville Fortaleza: Eusébio, Cidade Alpha e 4º Anel
               </h2>
               <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Os portais tratam o Alphaville Fortaleza como bairro da capital,
-                mas parte das casas aparece com endereço em Eusébio: o território
-                ocupa o eixo Fortaleza–Eusébio, na Região Metropolitana. É uma
-                região planejada, com residenciais fechados, lagoas, muito verde e
-                acesso rápido às principais vias — e que segue recebendo novos
-                lançamentos da marca.
+                O Alphaville Fortaleza fica no eixo Fortaleza–Eusébio, e a rotina de quem mora ali passa pelo comércio do Eusébio, pelo 4º Anel Viário e pelos shoppings da região. Veja o tempo de deslocamento a partir do Alphaville Ceará 5, na Cidade Alpha.
               </p>
-
-              <div class="grid gap-6 sm:grid-cols-3">
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Residenciais fechados
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    Casas em condomínios com regras próprias de construção e convivência, lotes amplos e vias internas arborizadas. A área construída mediana é de 435 m².
-                  </p>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Cidade Alpha e Ceará 5
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    Na mesma região, o lançamento Alphaville Ceará 5 fica na Cidade Alpha, de frente para a lagoa, com via de acesso e ciclovia — sinal de que o território segue em expansão.
-                  </p>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2" /><circle cx="12" cy="12" r="2" /><path d="M6 12h.01M18 12h.01" /></svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Conveniência no entorno
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    A partir do Alphaville Ceará 5, o Centro de Eusébio fica a 5 minutos, o 4º Anel Viário a 6, o Shopping Eusébio a 10 e o Terrazo Shopping a 12 minutos.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section aria-labelledby="video-heading" class="space-y-6">
-              <h2
-                id="video-heading"
-                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
-              >
-                Conheça o Alphaville Fortaleza por Dentro
-              </h2>
-              <div
-                class="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-6"
-              >
-                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-blue-950 shadow-lg">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/nhEvyDaHT_g?si=P0Pb70FXx8XHKY6A"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    class="block h-full w-full object-cover"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-                <p class="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
-                  Antes de visitar as casas em Alphaville Fortaleza, dê o play e
-                  faça um tour pelo território: as ruas internas, o padrão das
-                  residências, as áreas verdes e a estrutura de lazer. Em poucos
-                  minutos, você entende o estilo de vida que vem junto com o
-                  imóvel — e chega à visita com critérios claros para escolher.
-                </p>
-              </div>
+              <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2" role="list">
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Cidade Alpha</p>
+                      <p class="text-xs text-slate-500">Eusébio · lançamento Ceará 5</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">Território</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">Base<span class="text-xs font-semibold text-slate-500"> · ponto de partida</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[8%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-cidade-alpha" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Saiba mais</a><a href="#mapa-cidade" data-mapa="Cidade Alpha, CE" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Cidade Alpha no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Centro de Eusébio</p>
+                      <p class="text-xs text-slate-500">Comércio e serviços</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">Mais perto</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">5 min<span class="text-xs font-semibold text-slate-500"> de carro</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[42%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Centro de Eusébio, CE" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Centro de Eusébio no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">4º Anel Viário</p>
+                      <p class="text-xs text-slate-500">Acesso rápido a Fortaleza</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">Acesso</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">6 min<span class="text-xs font-semibold text-slate-500"> de carro</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[50%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="4º Anel Viário, CE" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">4º Anel Viário no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Shopping Eusébio</p>
+                      <p class="text-xs text-slate-500">Compras e serviços</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-blue-50 text-blue-900">Compras</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">10 min<span class="text-xs font-semibold text-slate-500"> de carro</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[83%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Shopping Eusébio, CE" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Shopping Eusébio no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Terrazo Shopping</p>
+                      <p class="text-xs text-slate-500">Compras e lazer</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-blue-50 text-blue-900">Compras</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">12 min<span class="text-xs font-semibold text-slate-500"> de carro</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Terrazo Shopping, CE" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Terrazo Shopping no mapa</a></p>
+                </li>
+              </ul>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Tempos de deslocamento informados pelo Grupo Alphaville a partir do Alphaville Ceará 5, na Cidade Alpha. O trajeto real varia conforme o residencial e o trânsito.
+              </p>
             </section>
 
             <section aria-labelledby="clube-heading" class="space-y-6">
@@ -906,8 +1342,8 @@
                 Clube privado e segurança: o padrão Alphaville
               </h2>
               <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Morar no Alphaville em Fortaleza significa ter um clube completo
-                a poucos passos de casa. Nos residenciais da marca no Ceará, a
+                Morar no Alphaville em Fortaleza significa ter a experiência de um
+                clube completo a poucos passos de casa. Nos residenciais da marca no Ceará, a
                 estrutura de lazer reúne:
               </p>
               <ul class="flex flex-wrap gap-2.5" role="list" aria-label="Estrutura do clube">
@@ -965,216 +1401,167 @@
               </ul>
             </section>
 
-            <section aria-labelledby="destaques-heading" class="space-y-6">
+            <section aria-labelledby="territorio-heading" class="space-y-6">
               <h2
-                id="destaques-heading"
+                id="territorio-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Destaques: casas em Alphaville Fortaleza
+                Alphaville em Fortaleza: onde fica e por que valoriza
               </h2>
-
-              <div class="grid gap-6 sm:grid-cols-2">
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75"
-                      alt="Casa contemporânea de dois pavimentos com fachada em madeira, grandes vãos de vidro e jardim iluminado, exemplo de casa de alto padrão à venda no Alphaville"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Casa 4 Suítes — Alphaville Fortaleza
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      330 m² · Piscina e churrasqueira · 3 vagas
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      4 quartos (4 suítes) · 5 banheiros · 3 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 2.950.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.400/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%204%20su%C3%ADtes%20em%20Alphaville%20Fortaleza."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75"
-                      alt="Área externa com piscina privativa e portas de vidro para a sala, padrão de lazer das casas em condomínio de luxo em Fortaleza"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Casa 4 Suítes com Piscina — Alphaville Fortaleza
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      420 m² · Varanda gourmet · Lote de 450 m²
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      4 quartos (4 suítes) · 5 banheiros · 4 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 3.600.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.600/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20com%20piscina%20em%20Alphaville%20Fortaleza."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=75"
-                      alt="Casa moderna com volume revestido em madeira, gramado e caminho de pedras, estilo das residências de alto padrão no Alphaville em Fortaleza"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Casa 5 Suítes — Alphaville Fortaleza
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      500 m² · Espaço gourmet · Escritório
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      5 quartos (5 suítes) · 6 banheiros · 4 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 5.300.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.800/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%205%20su%C3%ADtes%20em%20Alphaville%20Fortaleza."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=75"
-                      alt="Residência de arquitetura contemporânea com fachada de madeira e vidro e acesso amplo para carros, referência de casa de luxo para comprar em Alphaville"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Casa de Luxo 5 Suítes — Alphaville Fortaleza
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      600 m² · Hidromassagem e lareira · 6 vagas
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      5 quartos (5 suítes) · 7 banheiros · 6 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 6.200.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.800/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20casas%20de%20luxo%20em%20Alphaville%20Fortaleza."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <p class="text-xs leading-relaxed text-slate-500">
-                Exemplos ilustrativos com base nas medianas do mercado. A
-                disponibilidade e os valores de cada casa são confirmados pelo
-                corretor parceiro no atendimento.
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Os portais tratam o Alphaville Fortaleza como bairro da capital,
+                mas parte das casas aparece com endereço em Eusébio: o território
+                ocupa o eixo Fortaleza–Eusébio, na Região Metropolitana. É uma região planejada, com projeto urbanístico de
+                residenciais fechados, lagoas, muito verde e acesso rápido às
+                principais vias — e que segue recebendo novos lançamentos da
+                marca. O Alphaville Ceará 5, na Cidade Alpha, é o empreendimento
+                mais recente, pensado para quem busca qualidade de vida perto da
+                capital.
               </p>
+
+              <div class="grid gap-6 sm:grid-cols-3">
+                <div
+                  id="bairro-residenciais"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Residenciais fechados
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Casas em condomínios com regras próprias de construção e convivência, lotes amplos e vias internas arborizadas. A área construída mediana é de 435 m².
+                  </p>
+                </div>
+                <div
+                  id="bairro-cidade-alpha"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Cidade Alpha e Ceará 5
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Na mesma região, o lançamento Alphaville Ceará 5 fica na Cidade Alpha, de frente para a lagoa, com via de acesso e ciclovia — sinal de que o território segue em expansão.
+                  </p>
+                </div>
+                <div
+                  id="bairro-entorno"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2" /><circle cx="12" cy="12" r="2" /><path d="M6 12h.01M18 12h.01" /></svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Conveniência no entorno
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    A partir do Alphaville Ceará 5, o Centro de Eusébio fica a 5 minutos, o 4º Anel Viário a 6, o Shopping Eusébio a 10 e o Terrazo Shopping a 12 minutos.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="mapa-cidade" aria-labelledby="mapa-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="mapa-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Mapa de Alphaville Fortaleza (CE): acessos, compras e lazer
+              </h2>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Confira a distância entre o residencial, a capital e a sua rotina — do 4º Anel Viário à Avenida Washington Soares, que liga a região aos bairros nobres de Fortaleza. Toque em um ponto de referência para centralizar o mapa.
+              </p>
+              <div class="rounded-3xl border border-white/50 bg-white/60 p-3 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-4">
+                <div id="mapa-quadro" class="relative aspect-[4/3] w-full scroll-mt-32 overflow-hidden rounded-2xl bg-brand-mist sm:aspect-video">
+                  <iframe
+                    id="mapa-iframe"
+                    src="https://maps.google.com/maps?q=Alphaville%20Fortaleza%2C%20Eus%C3%A9bio%20-%20CE&z=13&output=embed"
+                    title="Mapa interativo de Alphaville Fortaleza, CE no Google Maps"
+                    class="absolute inset-0 h-full w-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="mt-3 flex flex-wrap items-center justify-between gap-2 px-1 text-xs">
+                  <p id="mapa-legenda" class="text-slate-500" aria-live="polite">Exibindo: Alphaville Fortaleza, CE</p>
+                  <div class="flex items-center gap-4">
+                    <button type="button" data-mapa="Alphaville Fortaleza, Eusébio - CE" data-mapa-zoom="13" class="min-h-10 font-semibold text-blue-950 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Visão geral</button>
+                    <a id="mapa-externo" href="https://www.google.com/maps/search/?api=1&query=Alphaville%20Fortaleza%2C%20Eus%C3%A9bio%20-%20CE" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-10 items-center font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Abrir no Google Maps</a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Regiões</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Alphaville Fortaleza, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Alphaville Fortaleza</button></li>
+                    <li><button type="button" data-mapa="Cidade Alpha, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Cidade Alpha</button></li>
+                    <li><button type="button" data-mapa="Centro de Eusébio, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Centro de Eusébio</button></li>
+                    <li><button type="button" data-mapa="Lagoa Redonda, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Lagoa Redonda</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Vias de acesso</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="4º Anel Viário, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">4º Anel Viário</button></li>
+                    <li><button type="button" data-mapa="CE-040, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">CE-040</button></li>
+                    <li><button type="button" data-mapa="Avenida Washington Soares, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida Washington Soares</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Compras</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Shopping Eusébio, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Shopping Eusébio</button></li>
+                    <li><button type="button" data-mapa="Terrazo Shopping, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Terrazo Shopping</button></li>
+                    <li><button type="button" data-mapa="Shopping Iguatemi Bosque, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Shopping Iguatemi Bosque</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Lazer</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Beach Park, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Beach Park</button></li>
+                    <li><button type="button" data-mapa="Praia do Futuro, CE" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Praia do Futuro</button></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section aria-labelledby="video-heading" class="space-y-6">
+              <h2
+                id="video-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Conheça o Alphaville Fortaleza por Dentro
+              </h2>
+              <div
+                class="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-6"
+              >
+                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-blue-950 shadow-lg">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/nhEvyDaHT_g?si=P0Pb70FXx8XHKY6A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    class="block h-full w-full object-cover"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <p class="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  Antes de visitar as casas em Alphaville Fortaleza, dê o play e
+                  faça um tour pelo território: as ruas internas, o padrão das
+                  residências, as áreas verdes e a estrutura de lazer. Em poucos
+                  minutos, você entende o estilo de vida que vem junto com o
+                  imóvel — e chega à visita com critérios claros para escolher.
+                </p>
+              </div>
             </section>
 
             <section aria-labelledby="como-comprar-heading" class="space-y-6">
@@ -1336,7 +1723,7 @@
                 href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20casas%20em%20Alphaville%20Fortaleza%20e%20quero%20falar%20com%20um%20corretor."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
+                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
                 Falar com corretor no WhatsApp
@@ -1346,7 +1733,7 @@
 
           <aside class="lateral hidden lg:col-span-4 lg:block" aria-label="Falar com corretor">
             <div
-              class="sticky top-32 rounded-3xl border border-white/60 bg-white/70 p-6 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-lg"
+              class="sticky top-32 rounded-3xl border border-orange-500/40 bg-white/90 p-6 shadow-[0_0_40px_-10px_rgba(249,115,22,0.35)] backdrop-blur-lg transition-shadow duration-300 hover:shadow-[0_0_48px_-6px_rgba(249,115,22,0.5)]"
             >
               <p
                 class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-orange"
@@ -1378,7 +1765,7 @@
                 href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20casas%20em%20Alphaville%20Fortaleza%20e%20quero%20falar%20com%20um%20corretor."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
                 Falar com corretor no WhatsApp
@@ -1399,7 +1786,7 @@
         href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20casas%20em%20Alphaville%20Fortaleza%20e%20quero%20falar%20com%20um%20corretor."
         target="_blank"
         rel="noopener noreferrer"
-        class="flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+        class="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
         Falar com corretor no WhatsApp
@@ -1596,6 +1983,111 @@
       document.getElementById("year").textContent = String(
         new Date().getFullYear()
       );
+    </script>
+    <script>
+      (() => {
+        const lista = document.getElementById("lista-apartamentos");
+        if (lista) {
+          const cards = [...lista.querySelectorAll("[data-quartos]")];
+          const botoes = [...document.querySelectorAll("[data-filtro-grupo]")];
+          const status = document.getElementById("filtro-status");
+          const vazio = document.getElementById("filtro-vazio");
+          const limpar = document.getElementById("filtro-limpar");
+          const estado = { quartos: "todos", preco: "todos", extra: new Set() };
+
+          const aplicar = () => {
+            let visiveis = 0;
+            cards.forEach((card) => {
+              const quartos = Number(card.dataset.quartos);
+              const preco = Number(card.dataset.preco);
+              const tags = card.dataset.tags.split(" ");
+              const ok =
+                (estado.quartos === "todos" ||
+                  (estado.quartos === "3" ? quartos >= 3 : quartos === Number(estado.quartos))) &&
+                (estado.preco === "todos" || (estado.preco === "ate" ? preco <= 4000000 : preco > 4000000)) &&
+                [...estado.extra].every((t) => tags.includes(t));
+              card.hidden = !ok;
+              if (ok) visiveis++;
+            });
+            status.textContent = `Mostrando ${visiveis} de ${cards.length} casas`;
+            vazio.hidden = visiveis > 0;
+            limpar.hidden = estado.quartos === "todos" && estado.preco === "todos" && estado.extra.size === 0;
+            botoes.forEach((b) => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              const ativo = g === "extra" ? estado.extra.has(v) : estado[g] === v;
+              b.setAttribute("aria-pressed", String(ativo));
+              if (ativo && g !== "extra") b.parentElement.scrollTo({ left: b.offsetLeft - b.parentElement.offsetLeft - 8, behavior: "smooth" });
+            });
+          };
+
+          const resetar = () => {
+            estado.quartos = "todos";
+            estado.preco = "todos";
+            estado.extra.clear();
+          };
+
+          botoes.forEach((b) =>
+            b.addEventListener("click", () => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              if (g === "extra") estado.extra.has(v) ? estado.extra.delete(v) : estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          document.querySelectorAll("[data-atalho]").forEach((a) =>
+            a.addEventListener("click", () => {
+              const [g, v] = a.dataset.atalho.split(":");
+              resetar();
+              if (g === "extra") estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          limpar.addEventListener("click", () => {
+            resetar();
+            aplicar();
+          });
+        }
+
+        const mapa = document.getElementById("mapa-iframe");
+        if (mapa) {
+          const quadro = document.getElementById("mapa-quadro");
+          const legenda = document.getElementById("mapa-legenda");
+          const externo = document.getElementById("mapa-externo");
+          const pontos = [...document.querySelectorAll("button[data-mapa][aria-pressed]")];
+          const centralizar = (local, zoom) => {
+            mapa.src = `https://maps.google.com/maps?q=${encodeURIComponent(local)}&z=${zoom}&output=embed`;
+            externo.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(local)}`;
+            legenda.textContent = `Exibindo: ${local.replace(/ - ([A-Z]{2})$/, ", $1")}`;
+            pontos.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mapa === local)));
+          };
+          document.querySelectorAll("[data-mapa]").forEach((el) =>
+            el.addEventListener("click", (evento) => {
+              centralizar(el.dataset.mapa, el.dataset.mapaZoom || "15");
+              if (el.tagName === "A") {
+                evento.preventDefault();
+                quadro.scrollIntoView({ behavior: "smooth", block: "center" });
+              }
+            })
+          );
+        }
+
+        const barras = document.querySelectorAll("[data-barra]");
+        const reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduzir && "IntersectionObserver" in window) {
+          barras.forEach((b) => (b.style.animationPlayState = "paused"));
+          const observador = new IntersectionObserver(
+            (entradas) =>
+              entradas.forEach((e) => {
+                if (!e.isIntersecting) return;
+                e.target.style.animationPlayState = "running";
+                observador.unobserve(e.target);
+              }),
+            { threshold: 0.4 }
+          );
+          barras.forEach((b) => observador.observe(b));
+        }
+      })();
     </script>
     <script src="./assets/menu.js" defer></script>
     <script src="./assets/search.js" defer></script>

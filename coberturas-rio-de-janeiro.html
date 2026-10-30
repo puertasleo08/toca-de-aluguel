@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cobertura Rio de Janeiro: Preços e Bairros | Toca de Aluguel</title>
+    <title>Cobertura Rio de Janeiro (RJ): Coberturas à Venda e Preços</title>
     <meta
       name="description"
-      content="Cobertura no Rio de Janeiro: preço mediano de R$ 2 milhões, Leblon perto de R$ 4,5 milhões, bairros de alto padrão e comodidades de luxo. Fale com corretores parceiros."
+      content="Cobertura no Rio de Janeiro, RJ: coberturas à venda com preço mediano de R$ 2 milhões, Leblon perto de R$ 4,5 milhões e Barra da Tijuca. Imóvel e apartamento com corretor."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0B1F3A" />
@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Toca de Aluguel" />
     <meta
       property="og:title"
-      content="Cobertura Rio de Janeiro: Preços e Bairros | Toca de Aluguel"
+      content="Cobertura Rio de Janeiro (RJ): Coberturas à Venda e Preços"
     />
     <meta
       property="og:description"
@@ -57,6 +57,35 @@
         --color-brand-orange-hot: #ea580c;
         --color-brand-sand: #f4f7fb;
         --color-brand-mist: #e8eef6;
+      }
+
+      @keyframes crescer {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      @keyframes brilho-laranja {
+        0%,
+        100% {
+          box-shadow: 0 0 22px -8px rgba(249, 115, 22, 0.22);
+        }
+        50% {
+          box-shadow: 0 0 30px -4px rgba(249, 115, 22, 0.4);
+        }
+      }
+
+      @keyframes brilho-whatsapp {
+        0%,
+        100% {
+          box-shadow: 0 10px 28px -10px rgba(37, 211, 102, 0.75), 0 0 0 0 rgba(37, 211, 102, 0.45);
+        }
+        50% {
+          box-shadow: 0 12px 34px -8px rgba(37, 211, 102, 0.85), 0 0 0 7px rgba(37, 211, 102, 0);
+        }
       }
 
       details > summary::-webkit-details-marker {
@@ -141,11 +170,11 @@
           {
             "@type": "Article",
             "@id": "https://www.tocadealuguel.com.br/coberturas-rio-de-janeiro#article",
-            "headline": "Cobertura Rio de Janeiro: preços, bairros e guia para comprar ou alugar",
+            "headline": "Cobertura Rio de Janeiro (RJ): coberturas à venda do Leblon à Barra da Tijuca",
             "description": "Guia de mercado com preço mediano, bairros de alto padrão e comodidades de luxo das coberturas à venda e para alugar no Rio de Janeiro.",
             "image": "https://www.tocadealuguel.com.br/assets/REVIEW/RIO-DE-JANEIRO/cobertura-piscina-vista-pao-de-acucar.jpg",
             "datePublished": "2026-09-29T08:00:00-03:00",
-            "dateModified": "2026-09-29T08:00:00-03:00",
+            "dateModified": "2026-10-30T18:30:00-03:00",
             "inLanguage": "pt-BR",
             "author": {
               "@id": "https://www.tocadealuguel.com.br/#organization"
@@ -483,8 +512,8 @@
         aria-hidden="true"
       ></div>
 
-      <div class="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <nav aria-label="Trilha de navegação" class="mb-8 text-xs text-slate-500">
+      <div class="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-14 lg:px-8">
+        <nav aria-label="Trilha de navegação" class="mb-5 text-xs text-slate-500 sm:mb-8">
           <ol class="flex flex-wrap items-center gap-2" role="list">
             <li>
               <a
@@ -501,7 +530,7 @@
         </nav>
 
         <div class="grid gap-10 lg:grid-cols-12">
-          <article class="space-y-12 lg:col-span-8">
+          <article class="min-w-0 space-y-12 lg:col-span-8">
             <header>
               <p
                 class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange"
@@ -509,15 +538,15 @@
                 Guia de mercado de luxo · Rio de Janeiro, RJ
               </p>
               <h1
-                class="text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-blue-950 sm:text-5xl"
+                class="text-[1.6rem] font-extrabold leading-[1.12] tracking-[-0.035em] text-blue-950 sm:text-5xl sm:leading-[1.08]"
               >
-                Cobertura Rio de Janeiro: Preços, Bairros e Guia para Comprar ou Alugar
+                Cobertura Rio de Janeiro (RJ): Coberturas à Venda do Leblon à Barra da Tijuca
               </h1>
               <div
-                class="mt-4 h-1 w-16 rounded-full bg-brand-orange"
+                class="mt-4 hidden h-1 w-16 rounded-full bg-brand-orange sm:block"
                 aria-hidden="true"
               ></div>
-              <p class="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
+              <p class="mt-5 text-[0.95rem] leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
                 Quem pesquisa cobertura Rio de Janeiro quer saber quanto custa,
                 onde estão as melhores opções e o que diferencia um imóvel de
                 luxo de verdade. Reunimos os números do mercado para você
@@ -528,14 +557,45 @@
                 <strong class="font-semibold text-blue-950">R$ 4,5 milhões</strong>.
               </p>
 
-              <figure class="mt-8">
+              <dl class="mt-5 grid grid-cols-2 gap-2.5 sm:mt-6 sm:grid-cols-4 sm:gap-3" aria-label="Indicadores das coberturas à venda no Rio de Janeiro">
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Preço mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 2 mi<span class="text-xs font-semibold text-slate-500"> · cidade</span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Leblon</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 4,5 mi<span class="text-xs font-semibold text-slate-500"> · mediana</span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">m² mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 9,2 mil<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Condomínio</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 2 mil<span class="text-xs font-semibold text-slate-500">/mês</span></dd>
+                </div>
+              </dl>
+
+              <nav class="mt-4 sm:mt-5" aria-label="Filtros rápidos de imóveis">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Filtros rápidos</p>
+                <div class="mt-2 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <a href="#destaques" data-atalho="quartos:3" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">3+ quartos</a>
+                  <a href="#destaques" data-atalho="preco:ate" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 3 mi</a>
+                  <a href="#destaques" data-atalho="extra:piscina" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Com piscina</a>
+                  <a href="#destaques" data-atalho="extra:zonasul" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Zona Sul</a>
+                  <a href="#bairros-vizinhos" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Bairros</a>
+                  <a href="#mapa-cidade" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mapa</a>
+                </div>
+              </nav>
+
+              <figure class="mt-6 sm:mt-8">
                 <div class="group relative">
                 <button
                   type="button"
                   class="absolute left-2 sm:-left-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Foto anterior"
                   aria-controls="carrossel-rio"
-                  onclick="const c = document.getElementById('carrossel-rio'); c.scrollBy({ left: -c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-rio'); c.scrollBy({ left: -(c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
                 </button>
@@ -544,13 +604,13 @@
                   class="absolute right-2 sm:-right-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Próxima foto"
                   aria-controls="carrossel-rio"
-                  onclick="const c = document.getElementById('carrossel-rio'); c.scrollBy({ left: c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-rio'); c.scrollBy({ left: (c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
                 </button>
                 <div
                   id="carrossel-rio"
-                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
+                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
                   tabindex="0"
                   role="region"
                   aria-roledescription="carrossel"
@@ -561,7 +621,7 @@
                     alt="Terraço de cobertura com piscina, gramado e vista para o Pão de Açúcar e a baía, exemplo de cobertura no Rio de Janeiro para comprar ou alugar"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
                     decoding="async"
                     fetchpriority="high"
                   />
@@ -570,7 +630,7 @@
                     alt="Terraço com sofás, deck e piscina de frente para o mar ao entardecer, padrão das coberturas de luxo à venda na Zona Sul carioca"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -579,7 +639,7 @@
                     alt="Vista aérea da orla de Copacabana com o Pão de Açúcar ao fundo, bairro com oferta de cobertura à venda no Rio de Janeiro"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -588,7 +648,7 @@
                     alt="Praia da Zona Sul ao pôr do sol com o Cristo Redentor e a bandeira do Brasil, cenário de quem procura cobertura no Rio"
                     width="1200"
                     height="896"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -602,6 +662,368 @@
                 </figcaption>
               </figure>
             </header>
+
+            <section id="destaques" aria-labelledby="destaques-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="destaques-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Destaques: cobertura à venda no Rio de Janeiro, da Zona Sul ao Recreio
+              </h2>
+
+              <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md space-y-3 p-3 sm:p-4" role="group" aria-label="Filtrar imóveis em destaque">
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Quartos</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Todos</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="2" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">2 quartos</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="3" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">3+ quartos</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Preço</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Qualquer</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="ate" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 3 mi</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="acima" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Acima de R$ 3 mi</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Extras</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="piscina" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Com piscina</button>
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="zonasul" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Zona Sul</button>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between gap-3 border-t border-slate-200/70 pt-3">
+                  <p id="filtro-status" class="text-sm text-slate-500" aria-live="polite">Mostrando 6 de 6 coberturas</p>
+                  <button type="button" id="filtro-limpar" class="min-h-10 rounded-lg px-2 text-sm font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2" hidden>Limpar filtros</button>
+                </div>
+              </div>
+
+              <div id="lista-apartamentos" class="grid gap-6 sm:grid-cols-2">
+                <article
+                  data-quartos="3"
+                  data-preco="4500000"
+                  data-tags="piscina zonasul"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala com escada vazada e parede de vidro aberta para terraço com piscina, típica de cobertura duplex à venda no Leblon"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Alto padrão</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura Duplex 3 Quartos — Leblon
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      180 m² · Terraço com piscina · Perto da praia
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 3 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 4.500.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 2.800/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20no%20Leblon%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="3"
+                  data-preco="3900000"
+                  data-tags="zonasul"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=75"
+                      alt="Escada de madeira iluminada por pendentes ligando os dois andares de uma cobertura duplex à venda em Botafogo"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura Duplex 3 Quartos — Botafogo
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      250 m² · Vista para o Cristo · Perto do metrô
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 2 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 3.900.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 2.500/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20em%20Botafogo%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="3"
+                  data-preco="2650000"
+                  data-tags="zonasul"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala ampla com poltronas brancas e parede de quadros, estilo das coberturas à venda no Humaitá, vizinho de Botafogo"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura 3 Quartos — Humaitá
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      138 m² · Varanda · Perto da Lagoa
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 2 banheiros · 1 vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.650.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.950/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20no%20Humait%C3%A1%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="3"
+                  data-preco="2600000"
+                  data-tags="piscina"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75"
+                      alt="Deck com piscina privativa e portas de vidro para a sala, estilo de cobertura com piscina para comprar na Barra da Tijuca"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura 3 Quartos — Barra da Tijuca
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      250 m² · Piscina e churrasqueira · Jardim Oceânico
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 3 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.600.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 2.100/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20na%20Barra%20da%20Tijuca%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="4"
+                  data-preco="1550000"
+                  data-tags=""
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75"
+                      alt="Living integrado com lareira e porta de vidro para a varanda, referência para quem quer comprar cobertura no Recreio dos Bandeirantes"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura 4 Quartos — Recreio dos Bandeirantes
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      280 m² · Terraço gourmet · Perto da praia
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      4 quartos · 3 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 1.550.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.700/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20no%20Recreio%20dos%20Bandeirantes%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="2"
+                  data-preco="1350000"
+                  data-tags="piscina"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala com sofá caramelo, plantas e luminárias pendentes em cobertura de 2 quartos com piscina e terraço à venda no Recreio"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Venda</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Cobertura 2 Quartos — Recreio dos Bandeirantes
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      213 m² · Piscina e terraço
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      2 quartos · 2 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 1.350.000</span
+                        >
+                        <span class="text-sm text-slate-500"></span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 980/mês</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20%C3%A0%20venda%20de%202%20quartos%20no%20Recreio%20dos%20Bandeirantes%2C%20no%20Rio%20de%20Janeiro."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div id="filtro-vazio" class="rounded-2xl border border-dashed border-slate-300 bg-white/60 p-6 text-center" hidden>
+                <p class="text-sm font-semibold text-blue-950">Nenhum destaque com esse perfil agora.</p>
+                <p class="mt-1 text-sm text-slate-600">Os corretores parceiros têm mais opções fora desta vitrine.</p>
+                <a href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20coberturas%20no%20Rio%20de%20Janeiro%20e%20quero%20op%C3%A7%C3%B5es%20com%20o%20meu%20perfil." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex min-h-10 items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_26px_-10px_rgba(37,211,102,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Pedir opções no WhatsApp</a>
+              </div>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Exemplos com base nas medianas e em anúncios reais da amostra. A disponibilidade, os valores e a possibilidade de locação de cada unidade são confirmados pelo corretor parceiro no atendimento.
+              </p>
+            </section>
 
             <section
               aria-labelledby="resumo-heading"
@@ -664,71 +1086,90 @@
                 metro quadrado muda completamente de um bairro para outro.
               </p>
 
-              <ul
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3"
-                role="list"
-                aria-label="Fatos rápidos do mercado de coberturas"
-              >
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /><path d="M10 6h4" /><path d="M10 10h4" /><path d="M10 14h4" /><path d="M10 18h4" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Tipo
+              <div class="grid gap-4 lg:grid-cols-2">
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Distribuição de preços das coberturas na cidade
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Percentual e número de anúncios por faixa de preço (17 anúncios com preço)</p>
+                  <ul class="mt-5 space-y-3.5" role="list">
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">Até R$ 1 milhão</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">6% · 1</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[15%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 1 a 2 milhões <span class="ml-1 rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand-orange-hot">mais comum</span></span>
+                        <span class="shrink-0 tabular-nums text-slate-500">41% · 7</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-gradient-to-r from-brand-orange to-amber-400"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 2 a 3 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">35% · 6</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[85%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 3 a 5 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">12% · 2</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[29%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">Acima de R$ 5 milhões</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">6% · 1</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[15%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Quartos, preço mediano e metragem das coberturas
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Proporção da amostra da cidade e valores medianos de cada tipologia</p>
+                  <div class="mt-5 flex h-4 gap-0.5 overflow-hidden rounded-full bg-slate-200/70" aria-hidden="true"><div data-barra class="h-full w-[12%] bg-blue-950 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[65%] bg-brand-orange origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[24%] bg-amber-400 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div></div>
+                  <ul class="mt-3 divide-y divide-slate-200/70" role="list">
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-blue-950" aria-hidden="true"></span>2 quartos <span class="font-normal text-slate-500">(12%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 870 mil · 170 m²</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-orange" aria-hidden="true"></span>3 quartos <span class="font-normal text-slate-500">(65%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 2,6 mi · 232 m²</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-amber-400" aria-hidden="true"></span>4 ou mais <span class="font-normal text-slate-500">(24%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">R$ 1,59 mi · 363 m²</span>
+                    </li>
+                  </ul>
+                  <p class="mt-3 text-xs leading-relaxed text-slate-500">
+                    As coberturas de 4 quartos ou mais saem mais baratas na mediana porque estão concentradas no Recreio e na Zona Norte, onde o m² custa menos da metade da Barra.
                   </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    Cobertura
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2" /><circle cx="12" cy="12" r="2" /><path d="M6 12h.01M18 12h.01" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Preço mediano
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 2 milhões
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Mediana no Leblon
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 4,5 milhões
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" /><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" /><path d="M12 4v6" /><path d="M2 18h20" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Quartos
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    3 (65% da oferta)
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z" /><path d="m14.5 12.5 2-2" /><path d="m11.5 9.5 2-2" /><path d="m8.5 6.5 2-2" /><path d="m17.5 15.5 2-2" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Área mediana
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    250 m²
-                  </p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" /><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /><path d="M12 17.5v-11" /></svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Condomínio mediano
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 2 mil/mês
-                  </p>
-                </li>
-              </ul>
+                </div>
+              </div>
 
               <div
                 class="overflow-x-auto rounded-2xl border border-white/50 bg-white/60 shadow-sm backdrop-blur-md"
               >
-                <table class="w-full text-left text-sm">
+                <table class="w-full min-w-[30rem] text-left text-sm">
                   <caption class="sr-only">
                     Indicadores das coberturas à venda no Rio de Janeiro e no Leblon
                   </caption>
@@ -791,6 +1232,210 @@
               </p>
             </section>
 
+            <section id="bairros-vizinhos" aria-labelledby="vizinhos-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="vizinhos-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Bairros vizinhos e regiões de influência: Leblon, Botafogo, Barra da Tijuca e Recreio dos Bandeirantes
+              </h2>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Compare o preço mediano e o metro quadrado de cada bairro antes de visitar. Quem não fecha no Leblon costuma olhar Botafogo e Humaitá, com vista para o Cristo e metrô perto; quem quer terraço maior pelo mesmo valor segue para a Barra da Tijuca e o Recreio dos Bandeirantes.
+              </p>
+              <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2" role="list">
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Leblon</p>
+                      <p class="text-xs text-slate-500">Zona Sul · praia e Mirante</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">17 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 4,5 mi<span class="text-xs font-semibold text-slate-500"> · R$ 21,6 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[89%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-leblon" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Leblon, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Leblon no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Botafogo</p>
+                      <p class="text-xs text-slate-500">Zona Sul · metrô e vista do Cristo</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 5,1 mi<span class="text-xs font-semibold text-slate-500"> · R$ 20,3 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Botafogo, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Botafogo no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Humaitá</p>
+                      <p class="text-xs text-slate-500">Zona Sul · perto da Lagoa</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 2,65 mi<span class="text-xs font-semibold text-slate-500"> · R$ 19,2 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[52%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Humaitá, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Humaitá no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Barra da Tijuca</p>
+                      <p class="text-xs text-slate-500">Zona Oeste · inclui Jardim Oceânico</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-blue-50 text-blue-900">7 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 2,6 mi<span class="text-xs font-semibold text-slate-500"> · R$ 10 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[51%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-barra-da-tijuca" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Barra da Tijuca, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Barra da Tijuca no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Recreio dos Bandeirantes</p>
+                      <p class="text-xs text-slate-500">Zona Oeste · terraços amplos</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">4 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 1,55 mi<span class="text-xs font-semibold text-slate-500"> · R$ 5,7 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[30%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-recreio" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Recreio dos Bandeirantes, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Recreio dos Bandeirantes no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Vila Isabel</p>
+                      <p class="text-xs text-slate-500">Zona Norte · coberturas grandes</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 1,55 mi<span class="text-xs font-semibold text-slate-500"> · R$ 3,2 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[31%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Vila Isabel, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Vila Isabel no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Olaria</p>
+                      <p class="text-xs text-slate-500">Zona Norte · 520 m²</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 1,05 mi<span class="text-xs font-semibold text-slate-500"> · R$ 2 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[21%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Olaria, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Olaria no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Engenho Novo</p>
+                      <p class="text-xs text-slate-500">Zona Norte · entrada</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 390 mil<span class="text-xs font-semibold text-slate-500"> · R$ 3,1 mil/m²</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[8%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Engenho Novo, Rio de Janeiro - RJ" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Engenho Novo no mapa</a></p>
+                </li>
+              </ul>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Leblon: 17 anúncios únicos do ZAP Imóveis. Demais bairros: 17 anúncios do Imovelweb em toda a cidade. Bairros com um único anúncio têm valor apenas indicativo.
+              </p>
+            </section>
+
+            <section aria-labelledby="comodidades-heading" class="space-y-6">
+              <h2
+                id="comodidades-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Comodidades de luxo mais exigidas nas coberturas do Rio
+              </h2>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Nos anúncios analisados, quatro itens se repetem e definem o
+                padrão de uma cobertura de luxo. Quem busca “Rio de Janeiro
+                cobertura com piscina” está no caminho certo: é o item mais
+                frequente da lista.
+              </p>
+              <ul class="grid gap-4 sm:grid-cols-2" role="list">
+                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /></svg>
+                    </span>
+                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">61% dos anúncios</span>
+                  </div>
+                  <div class="mt-3 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Piscina privativa ou do condomínio</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">Aparece na maioria dos anúncios, seja no terraço da cobertura, seja na área de lazer do prédio.</p>
+                </li>
+                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" /></svg>
+                    </span>
+                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">56% dos anúncios</span>
+                  </div>
+                  <div class="mt-3 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[92%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Churrasqueira e área gourmet</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">O espaço gourmet no terraço é o ponto de encontro da família e um dos itens que mais valorizam o imóvel.</p>
+                </li>
+                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
+                    </span>
+                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">28% dos anúncios</span>
+                  </div>
+                  <div class="mt-3 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[46%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Terraço ou varanda ampla</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">A área externa privativa é o que diferencia a cobertura de um apartamento comum — confira se está averbada na matrícula.</p>
+                </li>
+                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
+                    </span>
+                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">17% dos anúncios</span>
+                  </div>
+                  <div class="mt-3 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[28%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Segurança e portaria 24 horas</h3>
+                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">Portaria, controle de acesso e segurança 24 horas são prioridade em imóveis de alto valor.</p>
+                </li>
+              </ul>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Academia, sauna e jardim completam a lista. A vista — para o
+                mar, a Lagoa ou o Cristo — não aparece como filtro nos portais,
+                mas costuma ser o fator que mais pesa no preço de uma cobertura
+                no Rio de Janeiro.
+              </p>
+            </section>
+
             <section aria-labelledby="bairros-heading" class="space-y-6">
               <h2
                 id="bairros-heading"
@@ -807,7 +1452,8 @@
 
               <div class="grid gap-6 sm:grid-cols-3">
                 <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                  id="bairro-leblon"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                   <h3
@@ -820,7 +1466,8 @@
                   </p>
                 </div>
                 <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                  id="bairro-barra-da-tijuca"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                   <h3
@@ -833,7 +1480,8 @@
                   </p>
                 </div>
                 <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                  id="bairro-recreio"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-orange" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                   <h3
@@ -854,6 +1502,84 @@
                 com vista para o Pão de Açúcar ou o Cristo Redentor, com valores
                 observados entre R$ 2,6 milhões e R$ 5 milhões.
               </p>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Copacabana e Jardim Botânico, na Zona Sul, e Freguesia e
+                Jacarepaguá, na Zona Oeste, não apareceram na amostra, mas também
+                têm cobertura à venda. Nesses bairros, peça ao corretor parceiro os
+                valores atuais de cada imóvel antes de agendar a visita.
+              </p>
+            </section>
+
+            <section id="mapa-cidade" aria-labelledby="mapa-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="mapa-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Mapa do Rio de Janeiro (RJ): de Copacabana e Ipanema à Barra da Tijuca
+              </h2>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Compare a distância entre a cobertura, a praia e a sua rotina — do Mirante do Leblon à Pedra do Pontal, passando pela Lagoa Rodrigo de Freitas e pela Avenida das Américas. Toque em um bairro ou ponto de referência para centralizar o mapa.
+              </p>
+              <div class="rounded-3xl border border-white/50 bg-white/60 p-3 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-4">
+                <div id="mapa-quadro" class="relative aspect-[4/3] w-full scroll-mt-32 overflow-hidden rounded-2xl bg-brand-mist sm:aspect-video">
+                  <iframe
+                    id="mapa-iframe"
+                    src="https://maps.google.com/maps?q=Rio%20de%20Janeiro%20-%20RJ&z=11&output=embed"
+                    title="Mapa interativo de Rio de Janeiro, RJ no Google Maps"
+                    class="absolute inset-0 h-full w-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="mt-3 flex flex-wrap items-center justify-between gap-2 px-1 text-xs">
+                  <p id="mapa-legenda" class="text-slate-500" aria-live="polite">Exibindo: Rio de Janeiro, RJ</p>
+                  <div class="flex items-center gap-4">
+                    <button type="button" data-mapa="Rio de Janeiro - RJ" data-mapa-zoom="11" class="min-h-10 font-semibold text-blue-950 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Visão geral</button>
+                    <a id="mapa-externo" href="https://www.google.com/maps/search/?api=1&query=Rio%20de%20Janeiro%20-%20RJ" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-10 items-center font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Abrir no Google Maps</a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Bairros</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Leblon, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Leblon</button></li>
+                    <li><button type="button" data-mapa="Copacabana, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Copacabana</button></li><li><button type="button" data-mapa="Ipanema, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Ipanema</button></li>
+                    <li><button type="button" data-mapa="Lagoa, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Lagoa</button></li><li><button type="button" data-mapa="Jardim Botânico, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Jardim Botânico</button></li>
+                    <li><button type="button" data-mapa="Botafogo, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Botafogo</button></li>
+                    <li><button type="button" data-mapa="Humaitá, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Humaitá</button></li>
+                    <li><button type="button" data-mapa="Barra da Tijuca, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Barra da Tijuca</button></li>
+                    <li><button type="button" data-mapa="Jardim Oceânico, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Jardim Oceânico</button></li>
+                    <li><button type="button" data-mapa="Recreio dos Bandeirantes, Rio de Janeiro - RJ" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Recreio dos Bandeirantes</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Praias e mirantes</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Praia do Leblon, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Praia do Leblon</button></li>
+                    <li><button type="button" data-mapa="Mirante do Leblon, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mirante do Leblon</button></li>
+                    <li><button type="button" data-mapa="Praia do Recreio, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Praia do Recreio</button></li>
+                    <li><button type="button" data-mapa="Pedra do Pontal, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Pedra do Pontal</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Avenidas e vias</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Avenida Delfim Moreira, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida Delfim Moreira</button></li>
+                    <li><button type="button" data-mapa="Avenida das Américas, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida das Américas</button></li>
+                    <li><button type="button" data-mapa="Lagoa Rodrigo de Freitas, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Lagoa Rodrigo de Freitas</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Centros comerciais</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Shopping Leblon, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Shopping Leblon</button></li>
+                    <li><button type="button" data-mapa="BarraShopping, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">BarraShopping</button></li>
+                    <li><button type="button" data-mapa="Village Mall, Rio de Janeiro - RJ" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Village Mall</button></li>
+                  </ul>
+                </div>
+              </div>
             </section>
 
             <section aria-labelledby="video-heading" class="space-y-6">
@@ -889,281 +1615,6 @@
                   decisão.
                 </p>
               </div>
-            </section>
-
-            <section aria-labelledby="comodidades-heading" class="space-y-6">
-              <h2
-                id="comodidades-heading"
-                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
-              >
-                Comodidades de luxo mais exigidas nas coberturas do Rio
-              </h2>
-              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Nos anúncios analisados, quatro itens se repetem e definem o
-                padrão de uma cobertura de luxo. Quem busca “Rio de Janeiro
-                cobertura com piscina” está no caminho certo: é o item mais
-                frequente da lista.
-              </p>
-              <ul class="grid gap-4 sm:grid-cols-2" role="list">
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
-                  <div class="flex items-center justify-between gap-3">
-                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /></svg>
-                    </span>
-                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">61% dos anúncios</span>
-                  </div>
-                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Piscina privativa ou do condomínio</h3>
-                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">Aparece na maioria dos anúncios, seja no terraço da cobertura, seja na área de lazer do prédio.</p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
-                  <div class="flex items-center justify-between gap-3">
-                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" /></svg>
-                    </span>
-                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">56% dos anúncios</span>
-                  </div>
-                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Churrasqueira e área gourmet</h3>
-                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">O espaço gourmet no terraço é o ponto de encontro da família e um dos itens que mais valorizam o imóvel.</p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
-                  <div class="flex items-center justify-between gap-3">
-                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg>
-                    </span>
-                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">28% dos anúncios</span>
-                  </div>
-                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Terraço ou varanda ampla</h3>
-                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">A área externa privativa é o que diferencia a cobertura de um apartamento comum — confira se está averbada na matrícula.</p>
-                </li>
-                <li class="rounded-2xl border border-white/50 bg-white/60 backdrop-blur-md p-5">
-                  <div class="flex items-center justify-between gap-3">
-                    <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-blue-950 text-brand-orange">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>
-                    </span>
-                    <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">17% dos anúncios</span>
-                  </div>
-                  <h3 class="mt-4 text-base font-bold tracking-[-0.02em] text-blue-950">Segurança e portaria 24 horas</h3>
-                  <p class="mt-1.5 text-sm leading-relaxed text-slate-600">Portaria, controle de acesso e segurança 24 horas são prioridade em imóveis de alto valor.</p>
-                </li>
-              </ul>
-              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Academia, sauna e jardim completam a lista. A vista — para o
-                mar, a Lagoa ou o Cristo — não aparece como filtro nos portais,
-                mas costuma ser o fator que mais pesa no preço de uma cobertura
-                no Rio de Janeiro.
-              </p>
-            </section>
-
-            <section aria-labelledby="destaques-heading" class="space-y-6">
-              <h2
-                id="destaques-heading"
-                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
-              >
-                Destaques: coberturas no Rio de Janeiro
-              </h2>
-
-              <div class="grid gap-6 sm:grid-cols-2">
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=800&q=75"
-                      alt="Sala com escada vazada e parede de vidro aberta para terraço com piscina, típica de cobertura duplex à venda no Leblon"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Cobertura Duplex 3 Quartos — Leblon
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      180 m² · Terraço com piscina · Perto da praia
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      3 quartos · 3 banheiros · 2 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 4.500.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 2.800/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20duplex%20no%20Leblon%2C%20no%20Rio%20de%20Janeiro."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=75"
-                      alt="Deck com piscina privativa e portas de vidro para a sala, estilo de cobertura com piscina para comprar na Barra da Tijuca"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Venda</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Cobertura 3 Quartos — Barra da Tijuca
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      250 m² · Piscina e churrasqueira · Jardim Oceânico
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      3 quartos · 3 banheiros · 2 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 2.600.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 2.100/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20na%20Barra%20da%20Tijuca%2C%20no%20Rio%20de%20Janeiro."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75"
-                      alt="Living integrado com lareira e porta de vidro para a varanda, referência para quem quer comprar ou alugar cobertura no Recreio dos Bandeirantes"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Venda</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Cobertura 4 Quartos — Recreio dos Bandeirantes
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      280 m² · Terraço gourmet · Perto da praia
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      4 quartos · 3 banheiros · 2 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 1.550.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.700/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20no%20Recreio%20dos%20Bandeirantes%2C%20no%20Rio%20de%20Janeiro."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=800&q=75"
-                      alt="Escada de madeira iluminada por pendentes ligando os dois andares de uma cobertura duplex à venda em Botafogo"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Venda</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Cobertura Duplex 3 Quartos — Botafogo
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      250 m² · Vista para o Cristo · Perto do metrô
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      3 quartos · 2 banheiros · 2 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 3.900.000</span
-                        >
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 2.500/mês</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20coberturas%20em%20Botafogo%2C%20no%20Rio%20de%20Janeiro."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <p class="text-xs leading-relaxed text-slate-500">
-                Exemplos ilustrativos com base nas medianas do mercado. A
-                disponibilidade, os valores e a possibilidade de locação de cada
-                unidade são confirmados pelo corretor parceiro no atendimento.
-              </p>
             </section>
 
             <section aria-labelledby="como-comprar-heading" class="space-y-6">
@@ -1325,7 +1776,7 @@
                 href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20coberturas%20no%20Rio%20de%20Janeiro%20e%20quero%20falar%20com%20um%20corretor."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
+                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
                 Falar com corretor no WhatsApp
@@ -1335,7 +1786,7 @@
 
           <aside class="lateral hidden lg:col-span-4 lg:block" aria-label="Falar com corretor">
             <div
-              class="sticky top-32 rounded-3xl border border-white/60 bg-white/70 p-6 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-lg"
+              class="sticky top-32 rounded-3xl border border-orange-500/40 bg-white/90 p-6 shadow-[0_0_40px_-10px_rgba(249,115,22,0.35)] backdrop-blur-lg transition-shadow duration-300 hover:shadow-[0_0_48px_-6px_rgba(249,115,22,0.5)]"
             >
               <p
                 class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-orange"
@@ -1367,7 +1818,7 @@
                 href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20coberturas%20no%20Rio%20de%20Janeiro%20e%20quero%20falar%20com%20um%20corretor."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
                 Falar com corretor no WhatsApp
@@ -1388,7 +1839,7 @@
         href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20coberturas%20no%20Rio%20de%20Janeiro%20e%20quero%20falar%20com%20um%20corretor."
         target="_blank"
         rel="noopener noreferrer"
-        class="flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+        class="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
         Falar com corretor no WhatsApp
@@ -1585,6 +2036,111 @@
       document.getElementById("year").textContent = String(
         new Date().getFullYear()
       );
+    </script>
+    <script>
+      (() => {
+        const lista = document.getElementById("lista-apartamentos");
+        if (lista) {
+          const cards = [...lista.querySelectorAll("[data-quartos]")];
+          const botoes = [...document.querySelectorAll("[data-filtro-grupo]")];
+          const status = document.getElementById("filtro-status");
+          const vazio = document.getElementById("filtro-vazio");
+          const limpar = document.getElementById("filtro-limpar");
+          const estado = { quartos: "todos", preco: "todos", extra: new Set() };
+
+          const aplicar = () => {
+            let visiveis = 0;
+            cards.forEach((card) => {
+              const quartos = Number(card.dataset.quartos);
+              const preco = Number(card.dataset.preco);
+              const tags = card.dataset.tags.split(" ");
+              const ok =
+                (estado.quartos === "todos" ||
+                  (estado.quartos === "3" ? quartos >= 3 : quartos === Number(estado.quartos))) &&
+                (estado.preco === "todos" || (estado.preco === "ate" ? preco <= 3000000 : preco > 3000000)) &&
+                [...estado.extra].every((t) => tags.includes(t));
+              card.hidden = !ok;
+              if (ok) visiveis++;
+            });
+            status.textContent = `Mostrando ${visiveis} de ${cards.length} coberturas`;
+            vazio.hidden = visiveis > 0;
+            limpar.hidden = estado.quartos === "todos" && estado.preco === "todos" && estado.extra.size === 0;
+            botoes.forEach((b) => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              const ativo = g === "extra" ? estado.extra.has(v) : estado[g] === v;
+              b.setAttribute("aria-pressed", String(ativo));
+              if (ativo && g !== "extra") b.parentElement.scrollTo({ left: b.offsetLeft - b.parentElement.offsetLeft - 8, behavior: "smooth" });
+            });
+          };
+
+          const resetar = () => {
+            estado.quartos = "todos";
+            estado.preco = "todos";
+            estado.extra.clear();
+          };
+
+          botoes.forEach((b) =>
+            b.addEventListener("click", () => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              if (g === "extra") estado.extra.has(v) ? estado.extra.delete(v) : estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          document.querySelectorAll("[data-atalho]").forEach((a) =>
+            a.addEventListener("click", () => {
+              const [g, v] = a.dataset.atalho.split(":");
+              resetar();
+              if (g === "extra") estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          limpar.addEventListener("click", () => {
+            resetar();
+            aplicar();
+          });
+        }
+
+        const mapa = document.getElementById("mapa-iframe");
+        if (mapa) {
+          const quadro = document.getElementById("mapa-quadro");
+          const legenda = document.getElementById("mapa-legenda");
+          const externo = document.getElementById("mapa-externo");
+          const pontos = [...document.querySelectorAll("button[data-mapa][aria-pressed]")];
+          const centralizar = (local, zoom) => {
+            mapa.src = `https://maps.google.com/maps?q=${encodeURIComponent(local)}&z=${zoom}&output=embed`;
+            externo.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(local)}`;
+            legenda.textContent = `Exibindo: ${local.replace(/ - ([A-Z]{2})$/, ", $1")}`;
+            pontos.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mapa === local)));
+          };
+          document.querySelectorAll("[data-mapa]").forEach((el) =>
+            el.addEventListener("click", (evento) => {
+              centralizar(el.dataset.mapa, el.dataset.mapaZoom || "15");
+              if (el.tagName === "A") {
+                evento.preventDefault();
+                quadro.scrollIntoView({ behavior: "smooth", block: "center" });
+              }
+            })
+          );
+        }
+
+        const barras = document.querySelectorAll("[data-barra]");
+        const reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduzir && "IntersectionObserver" in window) {
+          barras.forEach((b) => (b.style.animationPlayState = "paused"));
+          const observador = new IntersectionObserver(
+            (entradas) =>
+              entradas.forEach((e) => {
+                if (!e.isIntersecting) return;
+                e.target.style.animationPlayState = "running";
+                observador.unobserve(e.target);
+              }),
+            { threshold: 0.4 }
+          );
+          barras.forEach((b) => observador.observe(b));
+        }
+      })();
     </script>
     <script src="./assets/menu.js" defer></script>
     <script src="./assets/search.js" defer></script>
