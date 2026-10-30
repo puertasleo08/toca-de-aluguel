@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apartamento para Alugar em Porto Alegre | Toca de Aluguel</title>
+    <title>Apartamento para Alugar em Porto Alegre RS | Toca de Aluguel</title>
     <meta
       name="description"
-      content="Apartamento para alugar em Porto Alegre: aluguel mediano de R$ 2.500, bairros com mais oferta e comodidades mais comuns. Agende sua visita com corretores parceiros."
+      content="Apartamento para alugar em Porto Alegre, RS: aluguel mediano de R$ 2.500, anúncios de apartamentos por bairro e mapa para escolher o imóvel residencial certo com corretores."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#0B1F3A" />
@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Toca de Aluguel" />
     <meta
       property="og:title"
-      content="Apartamento para Alugar em Porto Alegre | Toca de Aluguel"
+      content="Apartamento para Alugar em Porto Alegre RS | Toca de Aluguel"
     />
     <meta
       property="og:description"
@@ -57,6 +57,35 @@
         --color-brand-orange-hot: #ea580c;
         --color-brand-sand: #f4f7fb;
         --color-brand-mist: #e8eef6;
+      }
+
+      @keyframes crescer {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      @keyframes brilho-laranja {
+        0%,
+        100% {
+          box-shadow: 0 0 22px -8px rgba(249, 115, 22, 0.22);
+        }
+        50% {
+          box-shadow: 0 0 30px -4px rgba(249, 115, 22, 0.4);
+        }
+      }
+
+      @keyframes brilho-whatsapp {
+        0%,
+        100% {
+          box-shadow: 0 10px 28px -10px rgba(37, 211, 102, 0.75), 0 0 0 0 rgba(37, 211, 102, 0.45);
+        }
+        50% {
+          box-shadow: 0 12px 34px -8px rgba(37, 211, 102, 0.85), 0 0 0 7px rgba(37, 211, 102, 0);
+        }
       }
 
       details > summary::-webkit-details-marker {
@@ -138,11 +167,11 @@
           {
             "@type": "Article",
             "@id": "https://www.tocadealuguel.com.br/apartamentos-porto-alegre#article",
-            "headline": "Apartamento para alugar em Porto Alegre: preços, bairros e guia do mercado",
+            "headline": "Apartamento para alugar em Porto Alegre (RS): preços do Centro Histórico a Três Figueiras",
             "description": "Guia de mercado com aluguel mediano, bairros com mais oferta e comodidades mais comuns dos apartamentos para alugar em Porto Alegre.",
             "image": "https://www.tocadealuguel.com.br/assets/REVIEW/PORTO-ALEGRE/capa.jpg",
             "datePublished": "2026-09-26T08:00:00-03:00",
-            "dateModified": "2026-09-26T08:00:00-03:00",
+            "dateModified": "2026-10-30T17:00:00-03:00",
             "inLanguage": "pt-BR",
             "author": { "@id": "https://www.tocadealuguel.com.br/#organization" },
             "publisher": { "@id": "https://www.tocadealuguel.com.br/#organization" },
@@ -187,6 +216,22 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Depende do anunciante. Os corretores parceiros da Toca de Aluguel apresentam as garantias aceitas em cada imóvel, como fiador, caução ou seguro fiança, e conduzem a análise de crédito e o contrato de locação."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O IPTU está incluído no aluguel do apartamento em Porto Alegre?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Depende do contrato. A Lei do Inquilinato permite repassar o IPTU ao inquilino, e é o que acontece na maior parte das locações: o valor costuma ser cobrado em parcelas mensais, junto com o aluguel e o condomínio. Peça ao corretor o valor do IPTU do imóvel antes da visita para fechar o orçamento."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual bairro tem o aluguel de apartamento mais barato em Porto Alegre?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Na amostra da Toca de Aluguel, os bairros centrais de grande oferta — Centro Histórico, Floresta e Cidade Baixa — tiveram valor mediano perto de R$ 1.600, e a maioria dos anúncios do Centro Histórico ficou abaixo de R$ 1.700."
                 }
               }
             ]
@@ -466,8 +511,8 @@
         aria-hidden="true"
       ></div>
 
-      <div class="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
-        <nav aria-label="Trilha de navegação" class="mb-8 text-xs text-slate-500">
+      <div class="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-14 lg:px-8">
+        <nav aria-label="Trilha de navegação" class="mb-5 text-xs text-slate-500 sm:mb-8">
           <ol class="flex flex-wrap items-center gap-2" role="list">
             <li>
               <a
@@ -484,7 +529,7 @@
         </nav>
 
         <div class="grid gap-10 lg:grid-cols-12">
-          <article class="space-y-12 lg:col-span-8">
+          <article class="min-w-0 space-y-12 lg:col-span-8">
             <header>
               <p
                 class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-brand-orange"
@@ -492,18 +537,17 @@
                 Guia de mercado · Porto Alegre, RS
               </p>
               <h1
-                class="text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-blue-950 sm:text-5xl"
+                class="text-[1.6rem] font-extrabold leading-[1.12] tracking-[-0.035em] text-blue-950 sm:text-5xl sm:leading-[1.08]"
               >
-                Apartamento para Alugar em Porto Alegre: Preços, Bairros e Guia
-                do Mercado
+                Apartamento para Alugar em Porto Alegre (RS): Preços do Centro Histórico a Três Figueiras
               </h1>
               <div
-                class="mt-4 h-1 w-16 rounded-full bg-brand-orange"
+                class="mt-4 hidden h-1 w-16 rounded-full bg-brand-orange sm:block"
                 aria-hidden="true"
               ></div>
-              <p class="mt-6 text-base leading-relaxed text-slate-600 sm:text-lg">
-                Procurando apartamento para alugar em Porto Alegre? Reunimos os
-                números do mercado para você chegar à visita já sabendo quanto
+              <p class="mt-5 text-[0.95rem] leading-relaxed text-slate-600 sm:mt-6 sm:text-lg">
+                Procurando apartamento para alugar em Porto Alegre? Reunimos os números
+                do aluguel de apartamento na capital gaúcha para você chegar à visita já sabendo quanto
                 custa, onde está a maior oferta e o que esperar de cada bairro.
                 Na nossa amostra de setembro de 2026, o aluguel mediano ficou em
                 <strong class="font-semibold text-blue-950">R$ 2.500 por mês</strong>,
@@ -511,14 +555,46 @@
                 <strong class="font-semibold text-blue-950">R$ 580</strong>.
               </p>
 
-              <figure class="mt-8">
+              <dl class="mt-5 grid grid-cols-2 gap-2.5 sm:mt-6 sm:grid-cols-4 sm:gap-3" aria-label="Indicadores do aluguel de apartamentos em Porto Alegre">
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Aluguel mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 2.500<span class="text-xs font-semibold text-slate-500">/mês</span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Faixa central</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 1.370–3.800<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Condomínio mediano</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">R$ 580<span class="text-xs font-semibold text-slate-500">/mês</span></dd>
+                </div>
+                <div class="rounded-2xl border border-orange-500/40 bg-white/90 px-3.5 py-3 shadow-[0_0_25px_-5px_rgba(249,115,22,0.25)] backdrop-blur-md transition-all duration-300 animate-[brilho-laranja_4s_ease-in-out_infinite] hover:-translate-y-0.5 hover:border-orange-500/70 hover:shadow-[0_0_32px_-2px_rgba(249,115,22,0.45)] motion-reduce:animate-none sm:p-4">
+                  <dt class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Área mediana</dt>
+                  <dd class="mt-0.5 text-base font-extrabold tracking-[-0.02em] text-blue-950 sm:text-xl">50 m²<span class="text-xs font-semibold text-slate-500"></span></dd>
+                </div>
+              </dl>
+
+              <nav class="mt-4 sm:mt-5" aria-label="Filtros rápidos de imóveis">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Filtros rápidos</p>
+                <div class="mt-2 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <a href="#destaques" data-atalho="quartos:1" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">1 quarto</a>
+                  <a href="#destaques" data-atalho="quartos:2" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">2 quartos</a>
+                  <a href="#destaques" data-atalho="quartos:3" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">3+ quartos</a>
+                  <a href="#destaques" data-atalho="preco:ate" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 2.500</a>
+                  <a href="#destaques" data-atalho="extra:mobiliado" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mobiliado</a>
+                  <a href="#bairros-vizinhos" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Bairros</a>
+                  <a href="#mapa-cidade" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white/80 px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mapa</a>
+                </div>
+              </nav>
+
+              <figure class="mt-6 sm:mt-8">
                 <div class="group relative">
                 <button
                   type="button"
                   class="absolute left-2 sm:-left-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Foto anterior"
                   aria-controls="carrossel-poa"
-                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: -c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: -(c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
                 </button>
@@ -527,13 +603,13 @@
                   class="absolute right-2 sm:-right-4 top-1/2 z-10 flex -translate-y-1/2 items-center justify-center rounded-full bg-brand-orange p-2 text-white shadow-lg backdrop-blur-md transition-all hover:scale-110 hover:bg-white hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2"
                   aria-label="Próxima foto"
                   aria-controls="carrossel-poa"
-                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: c.clientWidth, behavior: 'smooth' })"
+                  onclick="const c = document.getElementById('carrossel-poa'); c.scrollBy({ left: (c.firstElementChild.offsetWidth + 16), behavior: 'smooth' })"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
                 </button>
                 <div
                   id="carrossel-poa"
-                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
+                  class="flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-4 rounded-[1.75rem]"
                   tabindex="0"
                   role="region"
                   aria-roledescription="carrossel"
@@ -544,7 +620,7 @@
                     alt="Espelho d'água do Parque da Redenção com ipês floridos, cercado de bairros muito procurados por quem busca apartamento para alugar em Porto Alegre"
                     width="1024"
                     height="764"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover shadow-[0_32px_64px_-24px_rgba(11,31,58,0.35)]"
                     decoding="async"
                     fetchpriority="high"
                   />
@@ -553,7 +629,7 @@
                     alt="Vista aérea da Orla do Guaíba e da Usina do Gasômetro ao pôr do sol, junto ao Centro Histórico, polo de aluguel de apartamento em Porto Alegre"
                     width="1024"
                     height="764"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -562,7 +638,7 @@
                     alt="Vista aérea de avenidas arborizadas e prédios modernos perto do Guaíba, região com apartamentos para locação em Porto Alegre"
                     width="1024"
                     height="764"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -571,7 +647,7 @@
                     alt="Paço Municipal e Fonte Talavera no Centro Histórico, ao lado do Mercado Público, com muitos imóveis para alugar em Porto Alegre"
                     width="1024"
                     height="764"
-                    class="aspect-video w-full shrink-0 snap-center rounded-[1.75rem] bg-brand-mist object-cover"
+                    class="aspect-[2/1] w-[86%] shrink-0 snap-start rounded-2xl sm:aspect-video sm:w-full sm:snap-center sm:rounded-[1.75rem] bg-brand-mist object-cover"
                     loading="lazy"
                     decoding="async"
                   />
@@ -585,6 +661,369 @@
                 </figcaption>
               </figure>
             </header>
+
+            <section id="destaques" aria-labelledby="destaques-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="destaques-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Destaques: apartamentos para alugar em Porto Alegre, de 1 quarto a 3 quartos
+              </h2>
+
+              <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md space-y-3 p-3 sm:p-4" role="group" aria-label="Filtrar imóveis em destaque">
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Quartos</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Todos</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="1" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">1 quarto</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="2" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">2 quartos</button>
+                    <button type="button" data-filtro-grupo="quartos" data-filtro-valor="3" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">3+ quartos</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Preço</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="todos" aria-pressed="true" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Qualquer</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="ate" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Até R$ 2.500</button>
+                    <button type="button" data-filtro-grupo="preco" data-filtro-valor="acima" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Acima de R$ 2.500</button>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-16 shrink-0 text-xs font-semibold uppercase tracking-wide text-slate-500">Extras</span>
+                  <div class="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-w-0 flex-1">
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="mobiliado" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mobiliado</button>
+                    <button type="button" data-filtro-grupo="extra" data-filtro-valor="vaga" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Com vaga</button>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between gap-3 border-t border-slate-200/70 pt-3">
+                  <p id="filtro-status" class="text-sm text-slate-500" aria-live="polite">Mostrando 6 de 6 apartamentos</p>
+                  <button type="button" id="filtro-limpar" class="min-h-10 rounded-lg px-2 text-sm font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2" hidden>Limpar filtros</button>
+                </div>
+              </div>
+
+              <div id="lista-apartamentos" class="grid gap-6 sm:grid-cols-2">
+                <article
+                  data-quartos="1"
+                  data-preco="1400"
+                  data-tags="mobiliado"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=75"
+                      alt="Apartamento compacto com cozinha integrada, mesa de jantar e poltrona vermelha, exemplo de apartamento mobiliado de 1 quarto para alugar no Centro Histórico de Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Aluguel</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 1 Quarto — Centro Histórico
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      40 m² · Mobiliado · Perto do Mercado Público
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      1 quarto · 1 banheiro · sem vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 1.400</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 450</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%201%20quarto%20no%20Centro%20Hist%C3%B3rico%20de%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="2"
+                  data-preco="2100"
+                  data-tags="vaga"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala de estar com sofá azul, piso de taco e janela ampla em apartamento de 2 quartos para alugar no Floresta, perto do Quarto Distrito de Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Aluguel</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 2 Quartos — Floresta
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      60 m² · Sacada · Próximo ao Quarto Distrito
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      2 quartos · 1 banheiro · 1 vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.100</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 520</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%202%20quartos%20no%20Floresta%20em%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="2"
+                  data-preco="2300"
+                  data-tags="vaga"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala de estar iluminada com janelas altas em apartamento de 2 quartos para alugar no Jardim Botânico, bairro residencial de Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Aluguel</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 2 Quartos — Jardim Botânico
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      55 m² · Churrasqueira na sacada · Elevador
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      2 quartos · 1 banheiro · 1 vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 2.300</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 580</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%202%20quartos%20no%20Jardim%20Bot%C3%A2nico%20em%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="2"
+                  data-preco="3500"
+                  data-tags="vaga"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala com sofá caramelo, plantas e luminárias pendentes em apartamento de 2 quartos para alugar em Santana, Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Aluguel</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 2 Quartos — Santana
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      66 m² · Perto da Redenção e do Hospital de Clínicas
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      2 quartos · 1 banheiro · 1 vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 3.500</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 600</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%202%20quartos%20em%20Santana%2C%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="3"
+                  data-preco="4600"
+                  data-tags="vaga"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala ampla com poltronas brancas e parede de quadros em apartamento de 3 quartos para alugar em Petrópolis, bairro nobre de Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 backdrop-blur-sm px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Aluguel</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 3 Quartos — Petrópolis
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      92 m² · Bairro residencial arborizado
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 2 banheiros · 1 vaga
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 4.600</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 790</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%203%20quartos%20em%20Petr%C3%B3polis%2C%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  data-quartos="3"
+                  data-preco="6500"
+                  data-tags="vaga"
+                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/60 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-orange-400/50 hover:shadow-[0_0_34px_-6px_rgba(249,115,22,0.4)]"
+                >
+                  <div class="relative overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75"
+                      alt="Sala ampla de apartamento de alto padrão com decoração clara, perfil dos imóveis para alugar em Três Figueiras, Porto Alegre"
+                      width="800"
+                      height="500"
+                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span
+                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
+                      >Alto padrão</span
+                    >
+                  </div>
+                  <div class="flex flex-1 flex-col p-5">
+                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
+                      Apartamento 3 Quartos — Três Figueiras
+                    </h3>
+                    <p class="mt-1.5 text-sm text-slate-500">
+                      90 m² · 1 suíte · Piscina e academia · Portaria 24 h
+                    </p>
+                    <p class="mt-4 text-sm text-slate-600">
+                      3 quartos · 2 banheiros · 2 vagas
+                    </p>
+                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
+                      <p>
+                        <span
+                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
+                          >R$ 6.500</span
+                        >
+                        <span class="text-sm text-slate-500">/mês</span>
+                        <span class="block text-xs text-slate-400"
+                          >+ condomínio R$ 1.400</span
+                        >
+                      </p>
+                      <a
+                        href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20apartamentos%20de%203%20quartos%20no%20Tr%C3%AAs%20Figueiras%20em%20Porto%20Alegre."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex min-h-10 items-center rounded-lg bg-gradient-to-r from-brand-orange to-amber-500 px-3.5 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_-8px_rgba(249,115,22,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:from-orange-600 hover:to-brand-orange hover:shadow-[0_0_26px_rgba(249,115,22,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
+                        >Ver Detalhes</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div id="filtro-vazio" class="rounded-2xl border border-dashed border-slate-300 bg-white/60 p-6 text-center" hidden>
+                <p class="text-sm font-semibold text-blue-950">Nenhum destaque com esse perfil agora.</p>
+                <p class="mt-1 text-sm text-slate-600">Os corretores parceiros têm mais opções fora desta vitrine.</p>
+                <a href="https://wa.me/5589959014753?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20apartamentos%20em%20Porto%20Alegre%20e%20quero%20op%C3%A7%C3%B5es%20com%20o%20meu%20perfil." target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex min-h-10 items-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_26px_-10px_rgba(37,211,102,0.8)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Pedir opções no WhatsApp</a>
+              </div>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Exemplos ilustrativos com base nas médias do mercado. A disponibilidade e os valores de cada unidade são confirmados pelo corretor parceiro no atendimento.
+              </p>
+            </section>
 
             <section
               aria-labelledby="resumo-heading"
@@ -737,205 +1176,104 @@
                 id="precos-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Quanto custa um apartamento para alugar em Porto Alegre
+                Quanto custa um apartamento para alugar em Porto Alegre: valor médio do aluguel de apartamento e condomínio
               </h2>
               <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                O mercado de locação da capital gaúcha é amplo: os maiores
+                O mercado de locação gaúcho é mais aquecido na capital: os maiores
                 portais somam milhares de apartamentos anunciados ao mesmo
                 tempo. A faixa de preço varia muito conforme o bairro e o padrão
                 do prédio — compactos no centro partem de cerca de R$ 950,
-                enquanto unidades de alto padrão passam de R$ 9.000.
+                enquanto unidades de alto padrão passam de R$ 9.000. O valor médio do aluguel
+                de apartamento na amostra foi de R$ 3.304, acima da mediana
+                porque poucos imóveis de alto padrão puxam a média para cima. Para quem compara imóveis residenciais para alugar em Porto Alegre, a
+                mediana é a referência mais segura.
               </p>
 
-              <ul
-                class="grid grid-cols-2 gap-4 sm:grid-cols-3"
-                role="list"
-                aria-label="Fatos rápidos do mercado"
-              >
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
-                    <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
-                    <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
-                    <path d="M10 6h4" />
-                    <path d="M10 10h4" />
-                    <path d="M10 14h4" />
-                    <path d="M10 18h4" />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Tipo
+              <div class="grid gap-4 lg:grid-cols-2">
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Distribuição do valor do aluguel
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Percentual e número de anúncios por faixa de preço (53 anúncios)</p>
+                  <ul class="mt-5 space-y-3.5" role="list">
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">Até R$ 1.500 <span class="ml-1 rounded-full bg-orange-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand-orange-hot">mais comum</span></span>
+                        <span class="shrink-0 tabular-nums text-slate-500">32% · 17</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-gradient-to-r from-brand-orange to-amber-400"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 1.500 a R$ 2.500</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">17% · 9</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[53%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 2.500 a R$ 4.000</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">26% · 14</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[81%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">R$ 4.000 a R$ 7.000</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">11% · 6</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[34%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="flex items-baseline justify-between gap-3 text-sm">
+                        <span class="font-semibold text-blue-950">Acima de R$ 7.000</span>
+                        <span class="shrink-0 tabular-nums text-slate-500">13% · 7</span>
+                      </div>
+                      <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                        <div data-barra class="h-2.5 w-[41%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-5 sm:p-6">
+                  <h3 class="text-base font-bold tracking-[-0.02em] text-blue-950">
+                    Proporção de 1, 2 e 3 quartos na oferta
+                  </h3>
+                  <p class="mt-1 text-xs text-slate-500">Distribuição por número de quartos (68 registros da amostra)</p>
+                  <div class="mt-5 flex h-4 gap-0.5 overflow-hidden rounded-full bg-slate-200/70" aria-hidden="true"><div data-barra class="h-full w-[47%] bg-blue-950 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[43%] bg-brand-orange origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div><div data-barra class="h-full w-[10%] bg-amber-400 origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none"></div></div>
+                  <ul class="mt-3 divide-y divide-slate-200/70" role="list">
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-blue-950" aria-hidden="true"></span>1 quarto <span class="font-normal text-slate-500">(47%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">32 registros</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-brand-orange" aria-hidden="true"></span>2 quartos <span class="font-normal text-slate-500">(43%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">29 registros</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-3 py-2.5 text-sm">
+                      <span class="flex items-center gap-2 font-semibold text-blue-950"><span class="h-2.5 w-2.5 shrink-0 rounded-full bg-amber-400" aria-hidden="true"></span>3 ou mais <span class="font-normal text-slate-500">(10%)</span></span>
+                      <span class="shrink-0 text-right tabular-nums text-slate-600">7 registros</span>
+                    </li>
+                  </ul>
+                  <p class="mt-3 text-xs leading-relaxed text-slate-500">
+                    Nove em cada dez anúncios são de 1 ou 2 quartos (o 1 quarto também
+                    aparece como 1 dormitório). Quem procura 3 quartos encontra bem menos opções e deve começar a busca com antecedência.
                   </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    Apartamento
-                  </p>
-                </li>
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <rect width="20" height="12" x="2" y="6" rx="2" />
-                    <circle cx="12" cy="12" r="2" />
-                    <path d="M6 12h.01M18 12h.01" />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Aluguel mediano
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    R$ 2.500/mês
-                  </p>
-                </li>
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" />
-                    <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" />
-                    <path d="M12 4v6" />
-                    <path d="M2 18h20" />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Quartos
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    1 a 2 (90%)
-                  </p>
-                </li>
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path d="M10 4 8 6" />
-                    <path d="M17 19v2" />
-                    <path d="M2 12h20" />
-                    <path d="M7 19v2" />
-                    <path
-                      d="M9 5 7.621 3.621A2.121 2.121 0 0 0 4 5v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"
-                    />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Banheiros
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    1 a 2
-                  </p>
-                </li>
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
-                    />
-                    <circle cx="7" cy="17" r="2" />
-                    <path d="M9 17h6" />
-                    <circle cx="17" cy="17" r="2" />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Vagas
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    Comodidade nº 1
-                  </p>
-                </li>
-                <li
-                  class="rounded-2xl border border-white/50 bg-white/60 p-4 backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"
-                    />
-                    <path d="m14.5 12.5 2-2" />
-                    <path d="m11.5 9.5 2-2" />
-                    <path d="m8.5 6.5 2-2" />
-                    <path d="m17.5 15.5 2-2" />
-                  </svg>
-                  <p class="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-                    Metragem
-                  </p>
-                  <p class="text-base font-bold tracking-[-0.02em] text-blue-950">
-                    50 m² (mediana)
-                  </p>
-                </li>
-              </ul>
+                </div>
+              </div>
 
               <div
                 class="overflow-x-auto rounded-2xl border border-white/50 bg-white/60 shadow-sm backdrop-blur-md"
               >
-                <table class="w-full text-left text-sm">
+                <table class="w-full min-w-[30rem] text-left text-sm">
                   <caption class="sr-only">
                     Indicadores do aluguel de apartamentos em Porto Alegre
                   </caption>
@@ -995,172 +1333,212 @@
               </div>
               <p class="text-xs leading-relaxed text-slate-500">
                 Metodologia: levantamento da Toca de Aluguel com uma amostra de
-                53 anúncios públicos de apartamentos para alugar em três portais
-                imobiliários com atuação em Porto Alegre, em setembro de 2026.
+                53 anúncios de apartamentos para alugar em três portais imobiliários com
+                atuação em Porto Alegre — ZAP Imóveis, MultiImob e Imovelweb —, em
+                setembro de 2026.
                 Valores de referência; o preço final é confirmado pelo corretor
                 responsável.
               </p>
             </section>
 
-            <section aria-labelledby="bairros-heading" class="space-y-6">
+            <section id="bairros-vizinhos" aria-labelledby="vizinhos-heading" class="scroll-mt-32 space-y-6">
               <h2
-                id="bairros-heading"
+                id="vizinhos-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Bairros com mais apartamentos para alugar em Porto Alegre
+                Bairros vizinhos e regiões de influência: do Centro Histórico a Três Figueiras
               </h2>
               <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Três bairros concentraram a maior parte dos anúncios da amostra.
-                Cada um atende um perfil diferente de morador — e isso aparece
-                direto no preço.
+                Compare a oferta e a faixa de aluguel de cada bairro antes de agendar a visita. Quem não fecha em Três Figueiras costuma olhar bairros próximos, como Petrópolis e Moinhos de
+                Vento; quem busca economia perto do centro encontra imóveis para alugar no
+                Floresta e na Cidade Baixa, bairro de vida cultural intensa e perto de
+                instituições de ensino como a UFRGS, com valores perto de R$ 1.600.
               </p>
-
-              <div class="grid gap-6 sm:grid-cols-3">
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Centro Histórico
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    Líder absoluto em oferta, com predominância de compactos de
-                    1 quarto entre 25 e 45 m². É a porta de entrada mais
-                    acessível: grande parte dos anúncios fica abaixo de R$ 1.700.
-                    Ideal para estudantes, pela proximidade com a UFRGS e a Orla
-                    do Guaíba.
-                  </p>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Jardim Botânico
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    Bairro residencial com muitos prédios novos de 1 e 2
-                    quartos, áreas de lazer e vaga de garagem. Costuma ficar
-                    próximo da mediana da cidade, entre R$ 1.500 e R$ 2.500.
-                    Tem acesso fácil à PUCRS pela Avenida Ipiranga.
-                  </p>
-                </div>
-                <div
-                  class="rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-brand-orange"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
-                    />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <h3
-                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
-                  >
-                    Três Figueiras
-                  </h3>
-                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
-                    Endereço de alto padrão, com unidades de 2 e 3 quartos acima
-                    de 80 m². Aqui o aluguel costuma superar R$ 6.500 e o
-                    condomínio passa de R$ 1.500. Fica próximo ao Shopping
-                    Iguatemi e a poucos minutos da PUCRS.
-                  </p>
-                </div>
-              </div>
-
-              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
-                Em bairros de grande oferta como Centro Histórico, Floresta e
-                Cidade Baixa, o valor mediano gira em torno de R$ 1.600. Já em
-                bairros nobres como Três Figueiras, Moinhos de Vento e
-                Petrópolis, a mediana sobe para cerca de R$ 3.650. Menino Deus e
-                Bela Vista também aparecem com frequência para quem busca um
-                meio-termo entre preço e localização.
+              <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2" role="list">
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Centro Histórico</p>
+                      <p class="text-xs text-slate-500">Região central · Mercado Público e Orla</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">12 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">Até R$ 1.700<span class="text-xs font-semibold text-slate-500"> · maioria</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-centro-historico" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Centro Histórico, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Centro Histórico no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Jardim Botânico</p>
+                      <p class="text-xs text-slate-500">Região leste · Av. Ipiranga e PUCRS</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-blue-50 text-blue-900">6 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 1.500–2.500<span class="text-xs font-semibold text-slate-500"></span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[50%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-jardim-botanico" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Jardim Botânico, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Jardim Botânico no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Três Figueiras</p>
+                      <p class="text-xs text-slate-500">Região nobre · Shopping Iguatemi</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">4 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">R$ 6.500+<span class="text-xs font-semibold text-slate-500">/mês</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[33%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#bairro-tres-figueiras" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Perfil do bairro</a><a href="#mapa-cidade" data-mapa="Três Figueiras, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Três Figueiras no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Floresta</p>
+                      <p class="text-xs text-slate-500">Região central · Quarto Distrito</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">3 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">≈ R$ 1.600<span class="text-xs font-semibold text-slate-500">/mês</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[25%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Floresta, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Floresta no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Cidade Baixa</p>
+                      <p class="text-xs text-slate-500">Região central · perto da UFRGS</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-emerald-50 text-emerald-700">2 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">≈ R$ 1.600<span class="text-xs font-semibold text-slate-500">/mês</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[17%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-emerald-500"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Cidade Baixa, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Cidade Baixa no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Petrópolis</p>
+                      <p class="text-xs text-slate-500">Região leste · residencial</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">2 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">≈ R$ 3.650<span class="text-xs font-semibold text-slate-500">/mês</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[17%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Petrópolis, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Petrópolis no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Menino Deus</p>
+                      <p class="text-xs text-slate-500">Região sul-central · perto da Orla</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-blue-50 text-blue-900">2 anúncios</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">Intermediário<span class="text-xs font-semibold text-slate-500"></span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[17%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Menino Deus, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Menino Deus no mapa</a></p>
+                </li>
+                <li class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md min-w-0 p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <p class="text-base font-bold tracking-[-0.02em] text-blue-950">Moinhos de Vento</p>
+                      <p class="text-xs text-slate-500">Região nobre · Parcão</p>
+                    </div>
+                    <span class="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold bg-orange-50 text-brand-orange-hot">1 anúncio</span>
+                  </div>
+                  <p class="mt-3 text-xl font-extrabold tracking-[-0.02em] text-blue-950">≈ R$ 3.650<span class="text-xs font-semibold text-slate-500">/mês</span></p>
+                  <div class="mt-2 h-2 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2 w-[8%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-brand-orange"></div>
+                  </div>
+                  <p class="mt-1 flex flex-wrap gap-x-4 text-sm"><a href="#mapa-cidade" data-mapa="Moinhos de Vento, Porto Alegre - RS" data-mapa-zoom="14" class="inline-flex min-h-10 items-center font-semibold text-blue-950 underline decoration-brand-orange/40 underline-offset-4 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Moinhos de Vento no mapa</a></p>
+                </li>
+              </ul>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Número de anúncios por bairro na amostra de setembro de 2026. As faixas de preço vêm da mesma amostra e são indicativas nos bairros com poucos anúncios.
               </p>
             </section>
 
-            <section aria-labelledby="video-heading" class="space-y-6">
+            <section aria-labelledby="metragem-heading" class="space-y-6">
               <h2
-                id="video-heading"
+                id="metragem-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Conheça Porto Alegre: O Guia Definitivo da Capital Gaúcha
+                Studio, 1 quarto ou 2 quartos: qual a área média de apartamento em Porto Alegre?
               </h2>
-              <div
-                class="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-6"
-              >
-                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-blue-950 shadow-lg">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube-nocookie.com/embed/5n8ZfRBCloI?si=K2EF7k9XB7YFWfqR"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    class="block h-full w-full object-cover"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-                <p class="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
-                  Antes de escolher o seu apartamento para alugar em Porto Alegre,
-                  dê o play e conheça a infraestrutura da cidade: transporte,
-                  bairros, parques, custo de vida e o clima da capital gaúcha. Em
-                  poucos minutos, você entende qual região combina com a sua
-                  rotina — e chega à visita muito mais seguro da decisão.
-                </p>
-              </div>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                A área média de apartamento na amostra foi de 58 m², e a mediana,
+                50 m². Studio para alugar é raro: só 3 dos 60 anúncios com
+                metragem tinham até 30 m² (21, 25 e 26 m²). O mais comum é
+                encontrar apartamento para alugar com 40 m², 38 m² ou 47 m² entre os
+                compactos de 1 quarto, e plantas de 60 a 70 m² nos de 2 quartos.
+                No topo, aparecem unidades de 142 m² no Jardim Europa.
+              </p>
+              <ul class="rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md space-y-3.5 p-5 sm:p-6" role="list" aria-label="Distribuição da metragem dos apartamentos para alugar em Porto Alegre">
+                <li>
+                  <div class="flex items-baseline justify-between gap-3 text-sm">
+                    <span class="font-semibold text-blue-950">Até 30 m² (studio)</span>
+                    <span class="shrink-0 tabular-nums text-slate-500">5% · 3</span>
+                  </div>
+                  <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2.5 w-[14%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-baseline justify-between gap-3 text-sm">
+                    <span class="font-semibold text-blue-950">31 a 45 m²</span>
+                    <span class="shrink-0 tabular-nums text-slate-500">35% · 21</span>
+                  </div>
+                  <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2.5 w-[100%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-gradient-to-r from-brand-orange to-amber-400"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-baseline justify-between gap-3 text-sm">
+                    <span class="font-semibold text-blue-950">46 a 60 m²</span>
+                    <span class="shrink-0 tabular-nums text-slate-500">22% · 13</span>
+                  </div>
+                  <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2.5 w-[63%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-baseline justify-between gap-3 text-sm">
+                    <span class="font-semibold text-blue-950">61 a 80 m²</span>
+                    <span class="shrink-0 tabular-nums text-slate-500">25% · 15</span>
+                  </div>
+                  <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2.5 w-[71%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-baseline justify-between gap-3 text-sm">
+                    <span class="font-semibold text-blue-950">Acima de 80 m²</span>
+                    <span class="shrink-0 tabular-nums text-slate-500">13% · 8</span>
+                  </div>
+                  <div class="mt-1.5 h-2.5 rounded-full bg-slate-200/70" aria-hidden="true">
+                    <div data-barra class="h-2.5 w-[37%] origin-left rounded-full animate-[crescer_1.2s_cubic-bezier(0.22,1,0.36,1)_both] motion-reduce:animate-none bg-blue-950/80"></div>
+                  </div>
+                </li>
+              </ul>
+              <p class="text-xs leading-relaxed text-slate-500">
+                Percentual e número de anúncios por faixa de área útil (60 anúncios com metragem informada).
+              </p>
             </section>
-
 
             <section aria-labelledby="comodidades-heading" class="space-y-6">
               <h2
@@ -1225,224 +1603,255 @@
                 A churrasqueira é quase uma marca registrada de Porto Alegre:
                 aparece tanto na sacada dos apartamentos quanto no espaço
                 gourmet do condomínio. Nos prédios mais novos, piscina, academia
-                e portaria 24 horas se tornam mais frequentes.
+                e portaria 24 horas se tornam mais frequentes. Quem tem animais de estimação
+                deve confirmar o regulamento do condomínio antes da visita, já que
+                a aceitação de pets varia de prédio para prédio.
               </p>
             </section>
 
-            <section aria-labelledby="destaques-heading" class="space-y-6">
+            <section aria-labelledby="bairros-heading" class="space-y-6">
               <h2
-                id="destaques-heading"
+                id="bairros-heading"
                 class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
               >
-                Destaques: apartamentos para alugar em Porto Alegre
+                Bairros com mais apartamentos para alugar em Porto Alegre
               </h2>
-
-              <div class="grid gap-6 sm:grid-cols-2">
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=75"
-                      alt="Sala de apartamento compacto com sofá e janela ampla"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm"
-                      >Aluguel</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Apartamento 1 Quarto — Centro Histórico
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      40 m² · Mobiliado · Perto do Mercado Público
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      1 quarto · 1 banheiro · sem vaga
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 1.400</span
-                        >
-                        <span class="text-sm text-slate-500">/mês</span>
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 450</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Quero%20saber%20sobre%20apartamentos%20de%201%20quarto%20no%20Centro%20Hist%C3%B3rico%20de%20Porto%20Alegre."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=75"
-                      alt="Sala de estar iluminada com janelas altas em apartamento de 2 quartos"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm"
-                      >Aluguel</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Apartamento 2 Quartos — Jardim Botânico
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      55 m² · Churrasqueira na sacada · Elevador
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      2 quartos · 1 banheiro · 1 vaga
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 2.300</span
-                        >
-                        <span class="text-sm text-slate-500">/mês</span>
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 580</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Quero%20saber%20sobre%20apartamentos%20de%202%20quartos%20no%20Jardim%20Bot%C3%A2nico%20em%20Porto%20Alegre."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=75"
-                      alt="Living integrado com cozinha em apartamento residencial"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-blue-950/85 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm"
-                      >Aluguel</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Apartamento 2 Quartos — Floresta
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      60 m² · Sacada · Próximo ao Quarto Distrito
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      2 quartos · 1 banheiro · 1 vaga
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 2.100</span
-                        >
-                        <span class="text-sm text-slate-500">/mês</span>
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 520</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Quero%20saber%20sobre%20apartamentos%20de%202%20quartos%20no%20Floresta%20em%20Porto%20Alegre."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-
-                <article
-                  class="group flex flex-col overflow-hidden rounded-2xl border border-white/70 bg-white/55 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md transition-transform duration-300 hover:-translate-y-1"
-                >
-                  <div class="relative overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=75"
-                      alt="Sala ampla de apartamento de alto padrão com decoração clara"
-                      width="800"
-                      height="500"
-                      class="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span
-                      class="absolute left-3 top-3 rounded-lg bg-brand-orange/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-white"
-                      >Alto padrão</span
-                    >
-                  </div>
-                  <div class="flex flex-1 flex-col p-5">
-                    <h3 class="text-lg font-bold tracking-[-0.02em] text-blue-950">
-                      Apartamento 3 Quartos — Três Figueiras
-                    </h3>
-                    <p class="mt-1.5 text-sm text-slate-500">
-                      90 m² · Piscina e academia · Portaria 24 h
-                    </p>
-                    <p class="mt-4 text-sm text-slate-600">
-                      3 quartos · 2 banheiros · 2 vagas
-                    </p>
-                    <div class="mt-auto flex items-end justify-between gap-3 pt-6">
-                      <p>
-                        <span
-                          class="text-xl font-extrabold tracking-[-0.02em] text-blue-950"
-                          >R$ 6.500</span
-                        >
-                        <span class="text-sm text-slate-500">/mês</span>
-                        <span class="block text-xs text-slate-400"
-                          >+ condomínio R$ 1.400</span
-                        >
-                      </p>
-                      <a
-                        href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Quero%20saber%20sobre%20apartamentos%20de%203%20quartos%20no%20Tr%C3%AAs%20Figueiras%20em%20Porto%20Alegre."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="inline-flex items-center rounded-lg bg-brand-orange px-3.5 py-2 text-sm font-semibold text-white transition-all duration-200 hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95"
-                        >Ver Detalhes</a
-                      >
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <p class="text-xs leading-relaxed text-slate-500">
-                Exemplos ilustrativos com base nas médias do mercado. A
-                disponibilidade e os valores de cada unidade são confirmados
-                pelo corretor parceiro no atendimento.
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Três bairros concentraram a maior parte dos anúncios da amostra.
+                Cada um atende um perfil diferente de morador — e isso aparece
+                direto no preço.
               </p>
+
+              <div class="grid gap-6 sm:grid-cols-3">
+                <div
+                  id="bairro-centro-historico"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-brand-orange"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Centro Histórico
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Líder absoluto em oferta, com predominância de compactos de
+                    1 quarto entre 25 e 45 m². É a porta de entrada mais
+                    acessível: grande parte dos anúncios fica abaixo de R$ 1.700.
+                    Ideal para estudantes e para quem busca praticidade, pela proximidade
+                    com a UFRGS e a Orla do Guaíba.
+                  </p>
+                </div>
+                <div
+                  id="bairro-jardim-botanico"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-brand-orange"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Jardim Botânico
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Bairro residencial com muitos prédios novos de 1 e 2
+                    quartos, áreas de lazer e vaga de garagem. Costuma ficar
+                    próximo da mediana da cidade, entre R$ 1.500 e R$ 2.500.
+                    Tem fácil acesso à PUCRS pela Avenida Ipiranga.
+                  </p>
+                </div>
+                <div
+                  id="bairro-tres-figueiras"
+                  class="scroll-mt-32 rounded-2xl border border-white/50 bg-white/60 p-6 shadow-sm backdrop-blur-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-brand-orange"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <h3
+                    class="mt-3 text-base font-bold tracking-[-0.02em] text-blue-950"
+                  >
+                    Três Figueiras
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Endereço de alto padrão, com unidades de 2 e 3 quartos acima
+                    de 80 m². Aqui o aluguel costuma superar R$ 6.500 e o
+                    condomínio passa de R$ 1.500. Fica próximo ao Shopping
+                    Iguatemi e a poucos minutos da PUCRS.
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Em bairros de grande oferta como Centro Histórico, Floresta e
+                Cidade Baixa, o valor mediano gira em torno de R$ 1.600. Já em bairros como Petrópolis — bairro residencial consolidado em Porto
+                Alegre —, Três Figueiras e Moinhos de Vento, a mediana sobe para
+                cerca de R$ 3.650. Menino Deus, bairro tradicional de Porto Alegre, e Bela Vista também
+                aparecem com frequência para quem busca um
+                meio-termo entre preço e localização.
+              </p>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Além dos bairros centrais, a amostra trouxe anúncios na zona
+                norte — Passo da Areia (também grafado Passo d’Areia), Jardim
+                Lindóia e Costa e Silva, perto do Aeroporto Salgado Filho — e
+                em bairros como Partenon, Azenha, Humaitá, Rio Branco, Santana e
+                Santa Tereza. Bom Fim e Santa Cecília, vizinhos da Redenção, além de Nonoai, Jardim
+                Carvalho e Jardim do Salso, não entraram na amostra; peça ao corretor
+                os valores atuais, sobretudo nos bairros escolhidos pela
+                proximidade ao centro da cidade.
+              </p>
+            </section>
+
+            <section id="mapa-cidade" aria-labelledby="mapa-heading" class="scroll-mt-32 space-y-6">
+              <h2
+                id="mapa-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Mapa de Porto Alegre (RS): parques, avenidas e centros comerciais
+              </h2>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                Antes de fechar o aluguel, confira a distância entre o apartamento e a sua rotina — da Orla do Guaíba ao Parcão, passando pela Avenida Ipiranga e pela Protásio Alves, um dos
+                corredores de ônibus da cidade. Boa localização, aqui, é estar
+                perto do transporte público e das linhas de ônibus que você usa. Toque em um ponto de referência ou em um bairro para centralizar o mapa.
+              </p>
+              <div class="rounded-3xl border border-white/50 bg-white/60 p-3 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-4">
+                <div id="mapa-quadro" class="relative aspect-[4/3] w-full scroll-mt-32 overflow-hidden rounded-2xl bg-brand-mist sm:aspect-video">
+                  <iframe
+                    id="mapa-iframe"
+                    src="https://maps.google.com/maps?q=Porto%20Alegre%20-%20RS&z=12&output=embed"
+                    title="Mapa interativo de Porto Alegre, RS no Google Maps"
+                    class="absolute inset-0 h-full w-full border-0"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="mt-3 flex flex-wrap items-center justify-between gap-2 px-1 text-xs">
+                  <p id="mapa-legenda" class="text-slate-500" aria-live="polite">Exibindo: Porto Alegre, RS</p>
+                  <div class="flex items-center gap-4">
+                    <button type="button" data-mapa="Porto Alegre - RS" data-mapa-zoom="12" class="min-h-10 font-semibold text-blue-950 hover:text-brand-orange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Visão geral</button>
+                    <a id="mapa-externo" href="https://www.google.com/maps/search/?api=1&query=Porto%20Alegre%20-%20RS" target="_blank" rel="noopener noreferrer" class="inline-flex min-h-10 items-center font-semibold text-brand-orange hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2">Abrir no Google Maps</a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Bairros</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Centro Histórico, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Centro Histórico</button></li>
+                    <li><button type="button" data-mapa="Jardim Botânico, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Jardim Botânico</button></li>
+                    <li><button type="button" data-mapa="Três Figueiras, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Três Figueiras</button></li>
+                    <li><button type="button" data-mapa="Floresta, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Floresta</button></li>
+                    <li><button type="button" data-mapa="Cidade Baixa, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Cidade Baixa</button></li>
+                    <li><button type="button" data-mapa="Petrópolis, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Petrópolis</button></li>
+                    <li><button type="button" data-mapa="Menino Deus, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Menino Deus</button></li>
+                    <li><button type="button" data-mapa="Moinhos de Vento, Porto Alegre - RS" data-mapa-zoom="14" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Moinhos de Vento</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Parques</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Parque Farroupilha, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Parque Farroupilha</button></li>
+                    <li><button type="button" data-mapa="Parque Moinhos de Vento, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Parque Moinhos de Vento</button></li>
+                    <li><button type="button" data-mapa="Orla do Guaíba, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Orla do Guaíba</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Avenidas e vias</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Avenida Ipiranga, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida Ipiranga</button></li>
+                    <li><button type="button" data-mapa="Avenida Borges de Medeiros, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida Borges de Medeiros</button></li>
+                    <li><button type="button" data-mapa="Avenida Protásio Alves, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Avenida Protásio Alves</button></li>
+                  </ul>
+                </div>
+                <div class="min-w-0 rounded-2xl border border-white/60 bg-white/70 shadow-sm backdrop-blur-md p-4">
+                  <h3 class="text-sm font-bold tracking-[-0.02em] text-blue-950">Centros comerciais</h3>
+                  <ul class="-mx-1 mt-3 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden" role="list">
+                    <li><button type="button" data-mapa="Shopping Iguatemi Porto Alegre, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Shopping Iguatemi Porto Alegre</button></li>
+                    <li><button type="button" data-mapa="Praia de Belas Shopping, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Praia de Belas Shopping</button></li>
+                    <li><button type="button" data-mapa="Mercado Público de Porto Alegre, Porto Alegre - RS" aria-pressed="false" class="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full border border-blue-950/12 bg-white px-4 py-2 text-sm font-semibold text-blue-950 transition-all hover:border-brand-orange/50 aria-pressed:border-brand-orange aria-pressed:bg-brand-orange aria-pressed:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:ring-offset-2 active:scale-95">Mercado Público de Porto Alegre</button></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section aria-labelledby="video-heading" class="space-y-6">
+              <h2
+                id="video-heading"
+                class="text-2xl font-extrabold tracking-[-0.03em] text-blue-950 sm:text-3xl"
+              >
+                Conheça Porto Alegre: O Guia Definitivo da Capital Gaúcha
+              </h2>
+              <div
+                class="rounded-3xl border border-white/50 bg-white/60 p-4 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-md sm:p-6"
+              >
+                <div class="aspect-video w-full overflow-hidden rounded-2xl bg-blue-950 shadow-lg">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/5n8ZfRBCloI?si=K2EF7k9XB7YFWfqR"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    class="block h-full w-full object-cover"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <p class="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
+                  Antes de escolher o seu apartamento para alugar em Porto Alegre,
+                  dê o play e conheça a infraestrutura da cidade: transporte,
+                  bairros, parques, custo de vida e o clima da capital gaúcha. Em
+                  poucos minutos, você entende qual região combina com a sua
+                  rotina — e chega à visita muito mais seguro da decisão.
+                </p>
+              </div>
             </section>
 
             <section aria-labelledby="como-alugar-heading" class="space-y-6">
@@ -1487,8 +1896,8 @@
                       Fale com um corretor parceiro
                     </h3>
                     <p class="mt-1 text-sm leading-relaxed text-slate-600">
-                      Pelo WhatsApp, você recebe opções compatíveis com o seu
-                      perfil e agenda a visita no mesmo dia.
+                      Pelo WhatsApp, você tira dúvidas sobre o imóvel, recebe opções
+                      compatíveis com o seu perfil e agenda a visita no mesmo dia.
                     </p>
                   </div>
                 </li>
@@ -1643,6 +2052,60 @@
                     crédito e o contrato de locação.
                   </p>
                 </details>
+                <details
+                  class="group rounded-2xl border border-white/50 bg-white/60 p-5 backdrop-blur-md open:bg-white/80"
+                >
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg text-base font-bold tracking-[-0.02em] text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange"
+                  >
+                    O IPTU está incluído no aluguel do apartamento em Porto Alegre?
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="shrink-0 text-brand-orange transition-transform group-open:rotate-180"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                    Depende do contrato. A Lei do Inquilinato permite repassar o IPTU ao inquilino, e é o que acontece na maior parte das locações: o valor costuma ser cobrado em parcelas mensais, junto com o aluguel e o condomínio. Peça ao corretor o valor do IPTU do imóvel antes da visita para fechar o orçamento.
+                  </p>
+                </details>
+                <details
+                  class="group rounded-2xl border border-white/50 bg-white/60 p-5 backdrop-blur-md open:bg-white/80"
+                >
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg text-base font-bold tracking-[-0.02em] text-blue-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-orange"
+                  >
+                    Qual bairro tem o aluguel de apartamento mais barato em Porto Alegre?
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="shrink-0 text-brand-orange transition-transform group-open:rotate-180"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </summary>
+                  <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                    Na amostra da Toca de Aluguel, os bairros centrais de grande oferta — Centro Histórico, Floresta e Cidade Baixa — tiveram valor mediano perto de R$ 1.600, e a maioria dos anúncios do Centro Histórico ficou abaixo de R$ 1.700.
+                  </p>
+                </details>
               </div>
             </section>
 
@@ -1659,15 +2122,16 @@
               <p class="mt-4 text-sm leading-relaxed sm:text-base">
                 Com aluguel mediano de R$ 2.500 e oferta concentrada em bairros
                 como Centro Histórico, Jardim Botânico e Três Figueiras, Porto
-                Alegre tem opções para todos os perfis. Temos dezenas de
-                apartamentos disponíveis em Porto Alegre. Fale com nossos
-                corretores parceiros e agende sua visita hoje.
+                Alegre tem opções para todos os perfis. Temos dezenas de apartamentos disponíveis em Porto Alegre. Se você
+                está pensando em alugar, fale com nossos corretores parceiros: eles
+                reúnem as melhores opções para alugar no seu bairro e agendam a
+                visita hoje.
               </p>
               <a
                 href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20apartamentos%20em%20Porto%20Alegre%20e%20quero%20agendar%20uma%20visita."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
+                class="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-blue-950 active:scale-95"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1694,7 +2158,7 @@
 
           <aside class="lateral hidden lg:col-span-4 lg:block" aria-label="Agendar visita">
             <div
-              class="sticky top-32 rounded-3xl border border-white/60 bg-white/70 p-6 shadow-[0_20px_40px_-28px_rgba(11,31,58,0.35)] backdrop-blur-lg"
+              class="sticky top-32 rounded-3xl border border-orange-500/40 bg-white/90 p-6 shadow-[0_0_40px_-10px_rgba(249,115,22,0.35)] backdrop-blur-lg transition-shadow duration-300 hover:shadow-[0_0_48px_-6px_rgba(249,115,22,0.5)]"
             >
               <p
                 class="text-xs font-semibold uppercase tracking-[0.16em] text-brand-orange"
@@ -1726,7 +2190,7 @@
                 href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20apartamentos%20em%20Porto%20Alegre%20e%20quero%20agendar%20uma%20visita."
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+                class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1760,7 +2224,7 @@
         href="https://wa.me/5589959014753?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20apartamentos%20em%20Porto%20Alegre%20e%20quero%20agendar%20uma%20visita."
         target="_blank"
         rel="noopener noreferrer"
-        class="flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(37,211,102,0.7)] transition-all duration-200 hover:bg-[#128C7E] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
+        class="flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-sm font-bold text-white shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1ebe5d] hover:shadow-[0_14px_34px_-10px_rgba(37,211,102,0.85)] animate-[brilho-whatsapp_2.8s_ease-in-out_infinite] motion-reduce:animate-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 active:scale-[0.98]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -1970,6 +2434,111 @@
       document.getElementById("year").textContent = String(
         new Date().getFullYear()
       );
+    </script>
+    <script>
+      (() => {
+        const lista = document.getElementById("lista-apartamentos");
+        if (lista) {
+          const cards = [...lista.querySelectorAll("[data-quartos]")];
+          const botoes = [...document.querySelectorAll("[data-filtro-grupo]")];
+          const status = document.getElementById("filtro-status");
+          const vazio = document.getElementById("filtro-vazio");
+          const limpar = document.getElementById("filtro-limpar");
+          const estado = { quartos: "todos", preco: "todos", extra: new Set() };
+
+          const aplicar = () => {
+            let visiveis = 0;
+            cards.forEach((card) => {
+              const quartos = Number(card.dataset.quartos);
+              const preco = Number(card.dataset.preco);
+              const tags = card.dataset.tags.split(" ");
+              const ok =
+                (estado.quartos === "todos" ||
+                  (estado.quartos === "3" ? quartos >= 3 : quartos === Number(estado.quartos))) &&
+                (estado.preco === "todos" || (estado.preco === "ate" ? preco <= 2500 : preco > 2500)) &&
+                [...estado.extra].every((t) => tags.includes(t));
+              card.hidden = !ok;
+              if (ok) visiveis++;
+            });
+            status.textContent = `Mostrando ${visiveis} de ${cards.length} apartamentos`;
+            vazio.hidden = visiveis > 0;
+            limpar.hidden = estado.quartos === "todos" && estado.preco === "todos" && estado.extra.size === 0;
+            botoes.forEach((b) => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              const ativo = g === "extra" ? estado.extra.has(v) : estado[g] === v;
+              b.setAttribute("aria-pressed", String(ativo));
+              if (ativo && g !== "extra") b.parentElement.scrollTo({ left: b.offsetLeft - b.parentElement.offsetLeft - 8, behavior: "smooth" });
+            });
+          };
+
+          const resetar = () => {
+            estado.quartos = "todos";
+            estado.preco = "todos";
+            estado.extra.clear();
+          };
+
+          botoes.forEach((b) =>
+            b.addEventListener("click", () => {
+              const { filtroGrupo: g, filtroValor: v } = b.dataset;
+              if (g === "extra") estado.extra.has(v) ? estado.extra.delete(v) : estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          document.querySelectorAll("[data-atalho]").forEach((a) =>
+            a.addEventListener("click", () => {
+              const [g, v] = a.dataset.atalho.split(":");
+              resetar();
+              if (g === "extra") estado.extra.add(v);
+              else estado[g] = v;
+              aplicar();
+            })
+          );
+          limpar.addEventListener("click", () => {
+            resetar();
+            aplicar();
+          });
+        }
+
+        const mapa = document.getElementById("mapa-iframe");
+        if (mapa) {
+          const quadro = document.getElementById("mapa-quadro");
+          const legenda = document.getElementById("mapa-legenda");
+          const externo = document.getElementById("mapa-externo");
+          const pontos = [...document.querySelectorAll("button[data-mapa][aria-pressed]")];
+          const centralizar = (local, zoom) => {
+            mapa.src = `https://maps.google.com/maps?q=${encodeURIComponent(local)}&z=${zoom}&output=embed`;
+            externo.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(local)}`;
+            legenda.textContent = `Exibindo: ${local.replace(/ - ([A-Z]{2})$/, ", $1")}`;
+            pontos.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mapa === local)));
+          };
+          document.querySelectorAll("[data-mapa]").forEach((el) =>
+            el.addEventListener("click", (evento) => {
+              centralizar(el.dataset.mapa, el.dataset.mapaZoom || "15");
+              if (el.tagName === "A") {
+                evento.preventDefault();
+                quadro.scrollIntoView({ behavior: "smooth", block: "center" });
+              }
+            })
+          );
+        }
+
+        const barras = document.querySelectorAll("[data-barra]");
+        const reduzir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduzir && "IntersectionObserver" in window) {
+          barras.forEach((b) => (b.style.animationPlayState = "paused"));
+          const observador = new IntersectionObserver(
+            (entradas) =>
+              entradas.forEach((e) => {
+                if (!e.isIntersecting) return;
+                e.target.style.animationPlayState = "running";
+                observador.unobserve(e.target);
+              }),
+            { threshold: 0.4 }
+          );
+          barras.forEach((b) => observador.observe(b));
+        }
+      })();
     </script>
     <script src="./assets/menu.js" defer></script>
     <script src="./assets/search.js" defer></script>
