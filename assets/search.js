@@ -31,6 +31,12 @@
       tags: "fortaleza ceara ce eusebio alphaville alpha casa casas condominio luxo alto padrao comprar venda lote",
     },
     {
+      nome: "Apartamentos em Santo Amaro",
+      url: "/apartamento-santo-amaro",
+      detalhe: "Apartamentos à venda · São Paulo, SP",
+      tags: "sp sao paulo zona sul santo amaro apartamento apartamentos comprar venda chacara santo antonio alto da boa vista granja julieta borba gato campo belo brooklin largo treze",
+    },
+    {
       nome: "Anunciar: leads para corretores",
       url: "/anunciar",
       detalhe: "Para corretores e imobiliárias",

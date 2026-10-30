@@ -1,0 +1,233 @@
+[
+ {
+  "fonte": "QuintoAndar",
+  "preco": 470000,
+  "cond_iptu": 790,
+  "area": 36,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Vereador José Diniz",
+  "titulo": "Compra de apartamento com 1 quarto e piscina no condomínio. Animais de estimação permitidos."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 390000,
+  "cond_iptu": 611,
+  "area": 52,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Washington Luís",
+  "titulo": "Apartamento de 1 quarto em Santo Amaro para comprar."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 485000,
+  "cond_iptu": 875,
+  "area": 58,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Rua Maria José da Conceição",
+  "titulo": "Apartamento em Santo Amaro com 2 quartos, uma vaga, piscina e permissão para animais, para comprar."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 500000,
+  "cond_iptu": 1022,
+  "area": 60,
+  "quartos": 2,
+  "vagas": 2,
+  "bairro": "Santo Amaro",
+  "rua": "Rua Maria José da Conceição",
+  "titulo": "Compra apartamento mobiliado em Santo Amaro, 2 quartos, varanda, academia no condomínio."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 498000,
+  "cond_iptu": 634,
+  "area": 36,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Vereador José Diniz",
+  "titulo": "Apartamento mobiliado com 1 quarto, piscina, churrasqueira. Ideal para comprar e ter animais."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 300000,
+  "cond_iptu": 1201,
+  "area": 38,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Washington Luís",
+  "titulo": "Apartamento mobiliado de um quarto, que aceita animais de estimação, à venda."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 365000,
+  "cond_iptu": 870,
+  "area": 82,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Washington Luís",
+  "titulo": "Comprar: apartamento 2 quartos em Santo Amaro."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 458000,
+  "cond_iptu": 470,
+  "area": 34,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Apartamento de 2 quartos para compra, com academia no condomínio e permissão para animais de estimação."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 355000,
+  "cond_iptu": 0,
+  "area": 29,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua São Benedito",
+  "titulo": "Apartamento à venda em Santo Amaro de 29 m²."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 360000,
+  "cond_iptu": 500,
+  "area": 24,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua São Benedito",
+  "titulo": "Venda de apartamento mobiliado, de 24 m² com 1 quarto e 1 banheiro em Santo Amaro."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 505000,
+  "cond_iptu": 600,
+  "area": 47,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Rua Elias Antonio Zogbi",
+  "titulo": "Apartamento à venda em Santo Amaro de 47 m² com varanda e churrasqueira."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 475000,
+  "cond_iptu": 480,
+  "area": 38,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Apartamento mobiliado com 2 quartos à venda. Ambiente confortável e pets permitidos, ótima oportunidade para comprar!"
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 382500,
+  "cond_iptu": 569,
+  "area": 35,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Comprar apartamento com 2 quartos e varanda."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 346000,
+  "cond_iptu": 440,
+  "area": 34,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Compra apartamento com 1 quarto, piscina no condomínio e aceita animais."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 369000,
+  "cond_iptu": 650,
+  "area": 23,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua São Benedito",
+  "titulo": "Apartamento com 1 quarto. Conta com piscina."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 370000,
+  "cond_iptu": 700,
+  "area": 26,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Santo Amaro",
+  "titulo": "Apartamento mobiliado com 1 quarto e piscina no condomínio, disponível para comprar."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 322000,
+  "cond_iptu": 462,
+  "area": 28,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Para comprar apartamento com 2 quartos e varanda."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 450000,
+  "cond_iptu": 431,
+  "area": 32,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Avenida Vereador José Diniz",
+  "titulo": "Apartamento mobiliado com 1 quarto e academia no condomínio para comprar."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 425000,
+  "cond_iptu": 264,
+  "area": 43,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua Plácido Vieira",
+  "titulo": "Venda de apartamento mobiliado com 2 quartos."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 400000,
+  "cond_iptu": 527,
+  "area": 58,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Santo Amaro",
+  "rua": "Rua Benedito Fernandes",
+  "titulo": "Comprar apartamento mobiliado em Santo Amaro, 2 quartos, aceita pets."
+ },
+ {
+  "fonte": "QuintoAndar",
+  "preco": 310000,
+  "cond_iptu": 333,
+  "area": 29,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Santo Amaro",
+  "rua": "Rua João Alfredo",
+  "titulo": "Apartamento de dois quartos em Santo Amaro para comprar."
+ }
+]

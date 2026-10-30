@@ -8,7 +8,7 @@ alwaysApply: true
 Ao criar ou atualizar uma página pilar (ex.: `apartamentos-curitiba.html`, `casas-ubatuba.html`):
 
 1. Leia `.cursorrules.txt` inteiro — principalmente a seção "4. PADRÃO DE PÁGINA PILAR" — e `references/seo-article-structure.md.txt`.
-2. Use o kit em `tools/pagina-pilar/`: `replicar.py` + uma configuração no formato dos `cfg_*.py` (são exemplos já aplicados; não rode de novo). Valide com `validar.py`, `neuron_gaps.py`, `teste_navegador.mjs` e `teste_interacoes.js`.
+2. Use o kit em `tools/pagina-pilar/`: `replicar.py` + uma configuração no formato dos `cfg_*.py` (são exemplos já aplicados; não rode de novo). Para página nova, sem HTML antigo, copie `nova_santo_amaro.py`: ele monta a página sobre a casca de outra pilar e insere o link em menus e rodapés de todos os `.html` (`--menus`). Valide com `validar.py`, `neuron_gaps.py`, `neuron_excesso.py`, `teste_navegador.mjs` e `teste_interacoes.js` (rode os testes de navegador um por vez).
 3. Só use números de amostras reais e salve a amostra bruta em `tools/pagina-pilar/dados/`.
 
 ## Antes de criar: confira os dados e avise o que faltar
