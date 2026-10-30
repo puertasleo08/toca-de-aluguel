@@ -1,0 +1,23 @@
+{
+ "total": 490,
+ "praias": {
+  "Praia da Maranduba": 48,
+  "Praia do Lázaro": 28,
+  "Praia das Toninhas": 25,
+  "Praia Perequê-Mirim": 15,
+  "Praia da Enseada": 13,
+  "Centro de Ubatuba": 6,
+  "Praia Grande": 5
+ },
+ "comodidades": {
+  "Cozinha": 475,
+  "Estacionamento": 431,
+  "Wi-Fi grátis": 427,
+  "Aceita pets": 308,
+  "Ar-condicionado": 204,
+  "Piscina": 133,
+  "Piscina privativa": 119,
+  "Beira-mar": 71,
+  "Vista do mar": 39
+ }
+}

@@ -1,0 +1,30 @@
+---
+description: Padrão obrigatório para criar ou atualizar páginas pilar de cidade, bairro, praia ou condomínio do Toca de Aluguel
+alwaysApply: true
+---
+
+# Páginas pilar de localidade
+
+Ao criar ou atualizar uma página pilar (ex.: `apartamentos-curitiba.html`, `casas-ubatuba.html`):
+
+1. Leia `.cursorrules.txt` inteiro — principalmente a seção "4. PADRÃO DE PÁGINA PILAR" — e `references/seo-article-structure.md.txt`.
+2. Use o kit em `tools/pagina-pilar/`: `replicar.py` + uma configuração no formato dos `cfg_*.py` (são exemplos já aplicados; não rode de novo). Valide com `validar.py`, `neuron_gaps.py`, `teste_navegador.mjs` e `teste_interacoes.js`.
+3. Só use números de amostras reais e salve a amostra bruta em `tools/pagina-pilar/dados/`.
+
+## Antes de criar: confira os dados e avise o que faltar
+
+Se faltar qualquer item abaixo, pare e peça ao usuário antes de gerar a página (ele verifica e envia):
+
+- palavra-chave foco e LSI obrigatórios;
+- tipo de negócio (aluguel mensal, temporada ou venda);
+- links de listagem com preço, área, quartos e bairro por anúncio (ordenados por relevância, não por menor preço);
+- fotos em `assets/REVIEW/[CIDADE]/` e ID do vídeo do YouTube;
+- autorização para criar a análise no NeuronWriter (1 crédito por página).
+
+Quando um dado não existir (ex.: comodidades sem % por anúncio), não invente: mostre o componente sem números e avise na entrega.
+
+## Depois de criar
+
+- Atualize `sitemap.xml`, o menu "Alugar" em todos os `.html` e o array `ROTAS` de `assets/search.js` (regras da seção 3 do `.cursorrules.txt`).
+- Teste em 390 px e 1366 px: sem rolagem lateral, filtros rápidos acima da dobra, links de bairro centralizam o mapa, barras animam e o console não tem erros.
+- Meta de 85+ no NeuronWriter; se só der para chegar lá cortando conteúdo útil ou os LSI pedidos, mantenha o conteúdo e avise.

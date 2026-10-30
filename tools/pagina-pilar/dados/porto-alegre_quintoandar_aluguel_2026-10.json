@@ -1,0 +1,209 @@
+[
+ {
+  "aluguel": 1100,
+  "total": 1585,
+  "area": 56,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Cavalhada",
+  "titulo": "Apartamento com dois quartos para alugar, com permissão para animais de estimação."
+ },
+ {
+  "aluguel": 1194,
+  "total": 1502,
+  "area": 65,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Vila Ipiranga",
+  "titulo": "Aluguel de apartamento, de 65 m² com 2 quartos e 2 banheiros em Vila Ipiranga."
+ },
+ {
+  "aluguel": 1030,
+  "total": 1559,
+  "area": 45,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Vila Nova",
+  "titulo": "Apartamento para alugar em Vila Nova de 45 m² com quintal e jardim."
+ },
+ {
+  "aluguel": 1300,
+  "total": 1666,
+  "area": 75,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Rubem Berta",
+  "titulo": "Apartamento de 2 quartos para alugar no bairro Rubem Berta."
+ },
+ {
+  "aluguel": 1700,
+  "total": 1836,
+  "area": 100,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Vila Nova",
+  "titulo": "Apartamento para aluguel na Vila Nova, com 2 quartos."
+ },
+ {
+  "aluguel": 1500,
+  "total": 1816,
+  "area": 48,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Cristo Redentor",
+  "titulo": "Apartamento de 1 quarto para aluguel no Cristo Redentor."
+ },
+ {
+  "aluguel": 1300,
+  "total": 1792,
+  "area": 60,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Humaitá",
+  "titulo": "Apartamento de dois quartos para alugar no Humaitá."
+ },
+ {
+  "aluguel": 1050,
+  "total": 1560,
+  "area": 41,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Santa Tereza",
+  "titulo": "Aluguel de apartamento, de 41 m² com 1 quarto, 1 banheiro e 1 vaga na garagem em Santa Tereza."
+ },
+ {
+  "aluguel": 1150,
+  "total": 1205,
+  "area": 32,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Jardim Leopoldina",
+  "titulo": "Apartamento para alugar em Jardim Leopoldina de 32 m²."
+ },
+ {
+  "aluguel": 1571,
+  "total": 2186,
+  "area": 67,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Nonoai",
+  "titulo": "Alugar apartamento em Nonoai com 2 quartos."
+ },
+ {
+  "aluguel": 1400,
+  "total": 1917,
+  "area": 50,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Vila Ipiranga",
+  "titulo": "Alugar apartamento na Vila Ipiranga com 2 quartos, aceita animais."
+ },
+ {
+  "aluguel": 1290,
+  "total": 1903,
+  "area": 75,
+  "quartos": 3,
+  "vagas": 1,
+  "bairro": "Santa Tereza",
+  "titulo": "Apartamento com 3 quartos para alugar."
+ },
+ {
+  "aluguel": 1080,
+  "total": 1459,
+  "area": 41,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Sarandi",
+  "titulo": "Aluguel de apartamento, de 41 m² com 2 quartos, 1 banheiro e 1 vaga na garagem em Sarandi."
+ },
+ {
+  "aluguel": 1400,
+  "total": 1722,
+  "area": 44,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Vila Ipiranga",
+  "titulo": "Aluguel de apartamento, de 44 m² com 1 quarto, 1 banheiro e 1 vaga na garagem em Vila Ipiranga."
+ },
+ {
+  "aluguel": 900,
+  "total": 1305,
+  "area": 42,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Protásio Alves",
+  "titulo": "Apartamento para alugar em Protásio Alves, com 1 quarto."
+ },
+ {
+  "aluguel": 1310,
+  "total": 1762,
+  "area": 40,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Independência",
+  "titulo": "Apartamento de 1 quarto para alugar na Independência."
+ },
+ {
+  "aluguel": 3000,
+  "total": 3642,
+  "area": 94,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Tristeza",
+  "titulo": "Aluguel de apartamento mobiliado, de 94 m² com 2 quartos e 2 banheiros em Tristeza."
+ },
+ {
+  "aluguel": 1205,
+  "total": 1701,
+  "area": 60,
+  "quartos": 1,
+  "vagas": 0,
+  "bairro": "Cidade Baixa",
+  "titulo": "Apartamento com varanda e 1 quarto. Conta com academia."
+ },
+ {
+  "aluguel": 1944,
+  "total": 2408,
+  "area": 52,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Centro Histórico",
+  "titulo": "Apartamento para alugar em Centro Histórico de 52 m²."
+ },
+ {
+  "aluguel": 1400,
+  "total": 1891,
+  "area": 51,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Cristal",
+  "titulo": "Apartamento de 2 quartos para aluguel no Cristal."
+ },
+ {
+  "aluguel": 1750,
+  "total": 2099,
+  "area": 40,
+  "quartos": 2,
+  "vagas": 0,
+  "bairro": "Centro Histórico",
+  "titulo": "Aluguel de apartamento, de 40 m² com 2 quartos e 1 banheiro em Centro Histórico."
+ },
+ {
+  "aluguel": 1650,
+  "total": 2196,
+  "area": 56,
+  "quartos": 2,
+  "vagas": 1,
+  "bairro": "Vila Nova",
+  "titulo": "Alugar apartamento com 2 quartos e churrasqueira no condomínio."
+ },
+ {
+  "aluguel": 1700,
+  "total": 2203,
+  "area": 40,
+  "quartos": 1,
+  "vagas": 1,
+  "bairro": "Vila Ipiranga",
+  "titulo": "Apartamento mobiliado de um quarto na Vila Ipiranga para alugar, com churrasqueira no condomínio."
+ }
+]

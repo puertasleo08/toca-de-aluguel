@@ -1,0 +1,104 @@
+[
+ {
+  "preco": 130000,
+  "area": 40,
+  "quartos": 2,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 135000,
+  "area": 45,
+  "quartos": 2,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 140000,
+  "area": 60,
+  "quartos": 3,
+  "bairro": "Vila Nova"
+ },
+ {
+  "preco": 120000,
+  "area": 50,
+  "quartos": 1,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 200000,
+  "area": 38,
+  "quartos": 2,
+  "bairro": "Santa Tereza"
+ },
+ {
+  "preco": 130000,
+  "area": 44,
+  "quartos": 1,
+  "bairro": "Santa Tereza"
+ },
+ {
+  "preco": 200000,
+  "area": 48,
+  "quartos": 2,
+  "bairro": "Cristal"
+ },
+ {
+  "preco": 200000,
+  "area": 56,
+  "quartos": 2,
+  "bairro": "Nonoai"
+ },
+ {
+  "preco": 130000,
+  "area": 42,
+  "quartos": 2,
+  "bairro": "Aberta dos Morros"
+ },
+ {
+  "preco": 220000,
+  "area": 54,
+  "quartos": 2,
+  "bairro": "Santa Tereza"
+ },
+ {
+  "preco": 210000,
+  "area": 41,
+  "quartos": 2,
+  "bairro": "Santa Tereza"
+ },
+ {
+  "preco": 120000,
+  "area": 39,
+  "quartos": 2,
+  "bairro": "Campo Novo"
+ },
+ {
+  "preco": 200000,
+  "area": 56,
+  "quartos": 2,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 200000,
+  "area": 48,
+  "quartos": 2,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 200000,
+  "area": 41,
+  "quartos": 2,
+  "bairro": "Cavalhada"
+ },
+ {
+  "preco": 200000,
+  "area": 48,
+  "quartos": 2,
+  "bairro": "Cristal"
+ },
+ {
+  "preco": 200000,
+  "area": 88,
+  "quartos": 2,
+  "bairro": "Tristeza"
+ }
+]

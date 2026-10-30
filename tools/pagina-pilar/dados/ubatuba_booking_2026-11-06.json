@@ -1,0 +1,227 @@
+[
+ {
+  "nome": "Apto climatizado com churrasqueira nas Toninhas",
+  "local": "Praia das Toninhas",
+  "quartos": 2,
+  "m2": 50,
+  "total": 572,
+  "tipo": "Apartamento",
+  "piscina": true
+ },
+ {
+  "nome": "Casa VISTA PRO MAR com Piscina aquecida",
+  "local": "Praia Perequê-Mirim",
+  "quartos": 1,
+  "m2": 300,
+  "total": 1180,
+  "tipo": "Casa de temporada",
+  "piscina": true
+ },
+ {
+  "nome": "Casa Tapajos",
+  "local": "",
+  "quartos": 2,
+  "m2": 100,
+  "total": 500,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Suite em Ubatuba a Passos da Praia de Itamambuca",
+  "local": "",
+  "quartos": 1,
+  "m2": 20,
+  "total": 380,
+  "tipo": "Apartamento",
+  "piscina": true
+ },
+ {
+  "nome": "A 500 m Praia Maranduba, casa 2 quartos em Condomínio",
+  "local": "Praia da Maranduba",
+  "quartos": 2,
+  "m2": 71,
+  "total": 630,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa linda em condomínio fechado",
+  "local": "",
+  "quartos": 4,
+  "m2": 220,
+  "total": 1224,
+  "tipo": "Casa de temporada",
+  "piscina": true
+ },
+ {
+  "nome": "Praia de itamambuca - Condominio - Bali House",
+  "local": "",
+  "quartos": 5,
+  "m2": 420,
+  "total": 3780,
+  "tipo": "Villa",
+  "piscina": true
+ },
+ {
+  "nome": "Apto em Ubatuba a 500m da Praia de Pereque-Açu",
+  "local": "",
+  "quartos": 2,
+  "m2": null,
+  "total": 450,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa de Praia Alto do Itamambuca",
+  "local": "",
+  "quartos": 3,
+  "m2": null,
+  "total": 2430,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa a 500m da Praia do Sape",
+  "local": "",
+  "quartos": 2,
+  "m2": 46,
+  "total": 522,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa em Ubatuba 5 Dormitórios Piscina Aquecida Perto de tudo!",
+  "local": "Praia Perequê-Mirim",
+  "quartos": 5,
+  "m2": 300,
+  "total": 2000,
+  "tipo": "Casa de temporada",
+  "piscina": true
+ },
+ {
+  "nome": "Casa de Condominio em Ubatuba com Churrasqueira",
+  "local": "",
+  "quartos": 2,
+  "m2": 130,
+  "total": 676,
+  "tipo": "Apartamento",
+  "piscina": false
+ },
+ {
+  "nome": "Morada Vitória",
+  "local": "",
+  "quartos": 2,
+  "m2": 160,
+  "total": 540,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Ubatuba - Praia Brava da Fortaleza",
+  "local": "",
+  "quartos": 4,
+  "m2": 180,
+  "total": 1945,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa de praia 600 metros da Praia e 1km do Centro da cidade",
+  "local": "",
+  "quartos": 2,
+  "m2": 120,
+  "total": 880,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa na Praia do Lázaro em Ubatuba/SP",
+  "local": "Praia do Lázaro",
+  "quartos": 4,
+  "m2": 25,
+  "total": 1634,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa nova Itagua , há 3 minutos da Praia Grande",
+  "local": "",
+  "quartos": 2,
+  "m2": 200,
+  "total": 1100,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Apartamento cobertura Ubatuba",
+  "local": "Praia Grande",
+  "quartos": 2,
+  "m2": 150,
+  "total": 940,
+  "tipo": "Casa de temporada",
+  "piscina": true
+ },
+ {
+  "nome": "Villa Divina Pietra - Ubatuba",
+  "local": "Praia das Toninhas",
+  "quartos": 2,
+  "m2": 95,
+  "total": 1437,
+  "tipo": "Villa",
+  "piscina": true
+ },
+ {
+  "nome": "Villa Félix Suites e Chalés",
+  "local": "",
+  "quartos": 1,
+  "m2": 45,
+  "total": 1000,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Sobrado para 5 pessoas",
+  "local": "Praia das Toninhas",
+  "quartos": 2,
+  "m2": null,
+  "total": 560,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Casa a 250M da praia das Toninhas",
+  "local": "Praia das Toninhas",
+  "quartos": 3,
+  "m2": 210,
+  "total": 1252,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Villa do Aconchego",
+  "local": "",
+  "quartos": 2,
+  "m2": 60,
+  "total": 675,
+  "tipo": "Villa",
+  "piscina": false
+ },
+ {
+  "nome": "Casa de Praia",
+  "local": "",
+  "quartos": 2,
+  "m2": 50,
+  "total": 438,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ },
+ {
+  "nome": "Itamambuca casas,suítes",
+  "local": "",
+  "quartos": 2,
+  "m2": 80,
+  "total": 1440,
+  "tipo": "Casa de temporada",
+  "piscina": false
+ }
+]

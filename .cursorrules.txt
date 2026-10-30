@@ -35,7 +35,24 @@ O código deve unir um craft visual impecável (sem parecer template gerado por 
   2. Uma galeria/carrossel de imagens apontando para `assets/REVIEW/[NOME-DA-CIDADE]/` (respeitar exatamente maiúsculas/minúsculas das pastas reais, pois a Vercel diferencia), onde todas as imagens DEVEM conter a tag `alt` otimizada com a palavra-chave foco e variações LSI.
 - **SEO DE IMAGENS (ALT TAGS):** Toda vez que uma tag `<img>` for criada ou modificada, o atributo `alt` DEVE obrigatoriamente ser preenchido. O texto do `alt` deve descrever visualmente o que está na foto E incorporar de forma natural a palavra-chave de foco da página ou suas variações LSI (ex: 'alugar casa em [cidade]', 'apartamento para alugar em [cidade]'). É estritamente proibido fazer 'Keyword Stuffing' (repetir a exata mesma palavra-chave em todas as fotos sem contexto).
 
-# 4. Checklist Final de Entrega
+# 4. PADRÃO DE PÁGINA PILAR (cidade, bairro, praia ou condomínio)
+Toda nova página pilar de localidade segue o padrão validado em `apartamentos-curitiba.html` e já aplicado em Porto Alegre, Ubatuba, Rio de Janeiro e Alphaville. O kit de replicação fica em `tools/pagina-pilar/` (fora do deploy, via `.vercelignore`): `replicar.py` aplica a estrutura a partir de uma configuração; os arquivos `cfg_*.py` são exemplos de configuração já aplicados (não rodar de novo); `validar.py`, `neuron_gaps.py`, `teste_navegador.mjs` e `teste_interacoes.js` fazem a validação; `dados/` guarda as amostras brutas de cada página.
+
+- **Ordem das seções:** H1 + introdução → indicadores (4 cards com brilho laranja) → filtros rápidos → carrossel compacto → Destaques com filtros (6 cards) → Resumo rápido → Quanto custa (gráfico de faixas de preço + tipologia + tabela + metodologia) → Bairros vizinhos e regiões de influência (grade ligada ao mapa) → seções específicas (ex.: metragem, preço por m²) → Comodidades (barras quando houver % por anúncio) → Perfis dos bairros principais → Mapa interativo (grupos de bairros, parques, vias e comércio) → Vídeo → Como alugar/comprar → FAQ (espelhado no JSON-LD) → Conclusão com CTA.
+- **Regra de dados reais:** gráficos, medianas, contagens e cards só podem usar números de uma amostra real e citada na metodologia. Nunca inventar percentuais, preços por bairro ou comodidades. Quando um dado não existir, o componente fica sem números (ex.: etiquetas em vez de barras) e isso é avisado ao usuário. Salvar a amostra bruta em `tools/pagina-pilar/dados/`.
+- **Dados necessários para uma nova página (se faltar algum, AVISAR o usuário e pedir antes de criar):**
+  1. Palavra-chave foco e termos LSI obrigatórios.
+  2. Tipo de negócio: aluguel mensal, temporada ou venda.
+  3. Links de listagem para coleta (ex.: QuintoAndar, ZAP, Imovelweb, Booking) com preço, área, quartos e bairro por anúncio — de preferência ordenados por relevância, não por menor preço.
+  4. Se possível, contagens por bairro e por comodidade (filtros do portal).
+  5. Fotos em `assets/REVIEW/[CIDADE]/` e ID de vídeo do YouTube.
+  6. Pontos de referência para o mapa (bairros, parques, vias, shoppings), quando o usuário tiver preferência.
+  7. Autorização para criar a análise no NeuronWriter (1 crédito por página).
+- **Mobile obrigatório (390 px):** sem rolagem lateral; `min-w-0` em todo item de grid que contenha fileira com rolagem; `whitespace-nowrap` nos chips; alvos de toque com no mínimo 40 px; H1, indicadores e filtros rápidos visíveis na primeira tela acima da barra fixa de WhatsApp; texto do CTA fixo curto o bastante para caber em uma linha.
+- **SEO:** um único H1; JSON-LD com RealEstateAgent, WebSite, BreadcrumbList, Article (atualizar `dateModified`) e FAQPage idêntico ao FAQ visível; meta 85+ no NeuronWriter. Exceção: quando os concorrentes da busca forem páginas curtas e o score só subir cortando conteúdo útil ou os LSI pedidos (caso Alphaville, 69), manter o conteúdo e avisar o usuário.
+- **Validação antes de publicar:** `validar.py` (tags, headings, ids, FAQ x schema, âncoras, imagens), teste no navegador em 390 px e 1366 px (filtros, links de bairro → mapa, barras animadas, zero erros de console), atualizar `lastmod` no `sitemap.xml`.
+
+# 5. Checklist Final de Entrega
 Antes de me entregar qualquer código de tela, você deve validar:
 1. Os estados interativos dos botões e formulários (hover, focus-visible) estão implementados?[cite: 2]
 2. O "copy" real imobiliário foi inserido no lugar de placeholders genéricos?[cite: 2]
