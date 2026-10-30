@@ -1,0 +1,4 @@
+﻿__pycache__/
+*.pyc
+_shots/
+_nw_payload.html
